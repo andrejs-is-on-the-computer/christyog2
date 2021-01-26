@@ -240,14 +240,25 @@ h2 {
         ;
 }
 
-#offers-card {
+#offer-section {
     margin-left: auto; 
     margin-right: auto;
+    gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "offer-1 offer-2 offer-3 offer-4"
+        "card-offer-info card-offer-info card-offer-info card-offer-info"
         ;
 }
+
+#offer-1-head, #offer-2-head, #offer-3-head, #offer-4-head {
+    
+}
+
+#offer-1-head {grid-area: offer-1;} #offer-2-head {grid-area: offer-2;}
+#offer-3-head {grid-area: offer-3;} #offer-4-head {grid-area: offer-4;}
+
+#offer-image {grid-area: offer-image;} #offer-info {grid-area: offer-info;}
 
 #group-select, #private-select, 
 #offer1-select, #offer2-select, #offer3-select, #offer4-select {
@@ -336,7 +347,53 @@ h2 {
     border-width: 0px;
 }
 
+nav {
+    /* background: #a7ffeb; */
+    grid-area: nav;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-height: 5vh;
+    color: white;
+    align-items: center;
+    background: #AC66AC;
+    gap: 0.5rem;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+}
+
+.offer-layout {
+    display: grid;
+    /* height: 100vh; */
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    /* grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 1.2fr 0.8fr; */
+    grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "side1 content1 side2"
+    "side1 offer-section side2"
+    "footer footer footer"
+    ;
+}
+
+#offer-section {
+    grid-area: offer-section;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ""
+    ;
+}
+
 @media only screen and (max-width: 860px){
+
+    nav {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .main-layout{
         grid-template-columns: 1fr;
         text-align: center;
@@ -372,6 +429,17 @@ h2 {
         "intro-layout"
         "break2"
         "wide-image"
+        "footer"
+        ;
+    }
+
+    .offer-layout {
+        grid-template-columns:1fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "content1"
+        "offer-section"
         "footer"
         ;
     }
@@ -546,22 +614,6 @@ a:hover {
     text-decoration:none;
  }
 
-nav {
-    /* background: #a7ffeb; */
-    grid-area: nav;
-    position: fixed;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    min-height: 6vh;
-    color: white;
-    align-items: center;
-    background: #AC66AC;
-    gap: 0.5rem;
-    z-index: 100;
-    width: 100%;
-    text-align: center;
-}
-
 main {
     grid-area: main;
     height: 90vh;
@@ -675,15 +727,64 @@ main {
     margin-bottom: 50px;
 }
 
+section {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+    background: #ffffff;
+    color: #3b3b3b;
+    box-shadow: 0.6rem 1rem 2rem #6b6b6b8f;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#card-offer-1, #card-offer-2, #card-offer-3, #card-offer-4{
+    height: 225px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+#card-offer-1:hover, #card-offer-2:hover, #card-offer-3:hover, #card-offer-4:hover{
+    background-color: #AC66AC;
+    color: white;
+}
+
+#offer-highlighted-0, #offer-highlighted-1, #offer-highlighted-2, #offer-highlighted-3,
+#offer-default-0:hover, #offer-default-1:hover, 
+#offer-default-2:hover, #offer-default-3:hover {
+    background-color: #AC66AC;
+    color: white;
+    transition: 0.3s;
+}
+
+#offer-default-0, #offer-default-1, #offer-default-2, #offer-default-3 {
+    background: #ffffff;
+    color: #3b3b3b;
+    transition: 0.3s;
+}
+
+#headingOne, #headingTwo, #headingThree, #headingFour {
+    transition: 0.3s;
+}
+
+
+
+#card-offer-info{
+    grid-area: card-offer-info;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
 #card-small{
     display: flex;
     position: relative;
     flex-direction: column;
     height: 200px;
     width: 200px;
-    /* min-width: 300px; */
-    /* padding: 25px 35px; */
-    /* min-width: 250px; */
     margin-left: auto;
     margin-right: auto;
     border-radius: 16px;

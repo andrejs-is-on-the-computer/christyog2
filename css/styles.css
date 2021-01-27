@@ -627,11 +627,13 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     text-align: center;
+    padding:20px;
 }
 
 .bg {
-    background-image: url("doorway.jpg");
+    background-image: url("chris_wide_edit.jpg");
   }
 
 .bg-info {
@@ -698,7 +700,7 @@ main {
 #card, #info-card, #offers-card, #test-card {
     
     width: 90%;
-    min-width: 300px;
+    min-width: 250px;
     
     /* min-width: 250px; */
     border-radius: 16px;

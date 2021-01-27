@@ -113,17 +113,11 @@ h2 {
 #content2{
     background: #ffffff;
     grid-area: content2;
-    /* min-height: 60vh; */
     padding: 50px 50px;
     display: grid;
     gap: 50px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-    "image1 text1 text1"
-    "text2 text2 image2"
-    "image3 text3 text3"
-    ;
-    /* grid-auto-rows: 300px; */
+    
 }
 
 .main-layout{
@@ -137,7 +131,7 @@ h2 {
     "nav nav nav"
     "main main main"
     "side1 content1 side2"
-    "side1 intro-cards side2"
+    /* "side1 intro-cards side2" */
     "carousel carousel carousel"
     "side3 break1 side4"
     "side3 content2 side4"
@@ -361,6 +355,8 @@ nav {
     z-index: 100;
     width: 100%;
     text-align: center;
+    top: 0;
+    transition: top 0.3s;
 }
 
 .offer-layout {
@@ -546,7 +542,7 @@ nav {
 
 .carousel-item {
     position: relative;
-    height:80vh;
+    height:90vh;
 }
 
 .carousel-item img {
@@ -583,9 +579,16 @@ nav {
     padding: 60px;
 }
 
-#colah {
+#colah, #main-text, .headline {
     color: #ffffff;
     text-shadow: 0.5px 0.5px 3px #1f1f1f;
+}
+
+#main-text {
+    text-align: center;
+    margin-top:100px;
+    padding: 5px;
+    font-weight: 700;
 }
 
 .colah-nav {
@@ -607,7 +610,7 @@ nav {
 
 a {
     color: #ffffff;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
 a:hover {
@@ -616,43 +619,35 @@ a:hover {
 
 main {
     grid-area: main;
-    height: 90vh;
+    height: 100vh;
     display: float;
 }
 
-.bg {
-    background-image: url("yogaperson.jpg");
-    /* position: fixed; */
+.bg, .bg-info, .bg-class {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100vh; */
+    text-align: center;
+}
+
+.bg {
+    background-image: url("doorway.jpg");
   }
 
 .bg-info {
     background-image: url("class.jpg");
-    /* position: fixed; */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* height: 100vh; */
 }
 
 .bg-class {
     background-image: url("peaceclass.jpg");
-    /* position: fixed; */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* height: 100vh; */
 }
 
 .headline {
-    position: absolute;
-    top: 50%;
-    left: 10%;
+    /* position: absolute; */
+    /* top: 50%; */
+    margin-top: 200px;
     font-size: 60px;
-    transform: (-20%, -70%);
+    /* transform: (-20%, -70%); */
     color: white;
     z-index: 3;
 }
@@ -700,7 +695,7 @@ main {
     margin-bottom: 100px;
 }
 
-#card, #info-card, #offers-card {
+#card, #info-card, #offers-card, #test-card {
     
     width: 90%;
     min-width: 300px;
@@ -725,6 +720,17 @@ main {
 #info-card, #offers-card {
     display: grid;
     margin-bottom: 50px;
+}
+
+#test-card {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    /* display: flex; */
+}
+
+#test-card-bottom {
+    align-self: flex-end;
 }
 
 section {

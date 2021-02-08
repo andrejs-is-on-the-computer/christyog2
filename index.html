@@ -15,7 +15,7 @@
 <body>
     <div class="main-layout">
       <nav id="navbar" class="navbar navbar-expand-md navbar-light md-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="navcollapse" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="bi bi-list"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -63,18 +63,18 @@
             </p>
         </div>
         
-        <div id="carousel" class="carousel slide" data-ride="carousel">
+        <div id="carousel_info" class="carousel slide" data-ride="carousel">
 
           <!-- Indicators -->
           <ul class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="0"></li>
+            <li data-target="#carousel_info" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel_info" data-slide-to="1"></li>
+            <li data-target="#carousel_info" data-slide-to="0"></li>
           </ul>
       
           <!-- The slideshow -->
           <div class="carousel-inner">
-            <a href="offers.html" class="carousel-item active">
+            <a id="carousel_item_info" href="offers.html" class="carousel-item active">
               <img src="images/free1.jpg" alt="Los Angeles">
               <div id="caro-text" class="carousel-caption">
                 <h4 id="colah">Packages</h4>
@@ -91,7 +91,7 @@
                 </div>
               </div>
             </a>
-            <a href="classes.html" class="carousel-item">
+            <a id="carousel_item_info" href="classes.html" class="carousel-item">
               <img src="images/free2.jpg" alt="Chicago">
               <div id="caro-text" class="carousel-caption">
                 <h5 id="colah">Group + Private Classes</h5>
@@ -103,7 +103,7 @@
                 </div>
               </div>
             </a>
-            <a href="info.html" class="carousel-item">
+            <a id="carousel_item_info" href="info.html" class="carousel-item">
               <img src="images/mountaintop.jpg" alt="New York">
               <div id="caro-text" class="carousel-caption">
                 <h5 id="colah">About Yoga con Christine</h5>
@@ -125,10 +125,10 @@
           </div>
       
           <!-- Left and right controls -->
-          <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+          <a class="carousel-control-prev" href="#carousel_info" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
           </a>
-          <a class="carousel-control-next" href="#carousel" data-slide="next">
+          <a class="carousel-control-next" href="#carousel_info" data-slide="next">
             <span class="carousel-control-next-icon"></span>
           </a>
         </div>
@@ -139,7 +139,120 @@
           <hr id="hr-break">
         </div>
         <div id="content2">
-          <div id="test-card">
+          <div class="card-columns">
+
+            <div id="testo-card" class="card p-3 text-center">
+              <div class="card-body">
+                <p class="card-text">"Me gusta hacer yoga con Christine, ayuda a liberar la 
+                  mente, la respiración y a mantener el cuerpo sano y 
+                  tonificado, “animaros a practicarlo”.</p>
+                <p class="card-text"><small class="text-muted">Carmen, Granada (ES)</small></p>
+              </div>
+            </div>
+
+            <div id="testo-card" class="card p-3 text-center">
+              <div class="card-body">
+                <p class="card-text">"Es realmente gratificante compartir cada semana nuestra 
+                  clase de yoga con Christine. Es una hora en la que desconectas 
+                  de todo lo que te preocupa y nos transmite una gran sensación de 
+                  bienestar y tranquilidad. Muy recomendable."</p>
+                <p class="card-text"><small class="text-muted">Claudia, Granada (ES)</small></p>
+              </div>
+            </div>
+
+            <div id="testo-card" class="card p-3 text-center">
+              <div class="card-body">
+                <p class="card-text">"Siempre me ha llamado la atención practicar yoga pero 
+                  nunca he sido constante por motivos personales y porque 
+                  las clases a veces eran demasiado avanzadas. Estas 
+                  clases te “enganchan”, te sientes fenomenal cuando 
+                  terminas y lo que es más importante, estás deseando 
+                  que llegue la siguiente clase. Gracias Christine."</p>
+                <p class="card-text"><small class="text-muted">Ana, Granada (ES)</small></p>
+              </div>
+            </div>
+
+            <div id="testo-card" class="card p-3 text-center">
+              <div class="card-body">
+                <p class="card-text">"Llevo más de un año haciendo yoga con Christine, 
+                  por primera vez en mi vida, y me encanta. Ella se 
+                  adapta siempre a las características del grupo y 
+                  también sabe qué necesitas a nivel individual. 
+                  Hacer yoga con Christine me ha hecho tomar 
+                  conciencia de mi cuerpo, de como puedo controlar 
+                  lo que siento y cómo lo siento. Su voz te 
+                  envuelve y siempre sabes qué hacer y cómo 
+                  hacerlo. Nunca te sientes sola o perdida. El 
+                  día que tenemos nuestra sesión es un día 
+                  especial para mí. Gracias por todo Christine."</p>
+                <p class="card-text"><small class="text-muted">Ángeles, Granada (ES)</small></p>
+              </div>
+            </div>
+
+            <div id="testo-card" class="card p-3 text-center">
+              <div class="card-body">
+                <p class="card-text">"Me ha encantado hacer yoga con Christine. Ella 
+                  desprende calma y benevolencia y es muy atenta 
+                  con cada alumno. Te sientes en muy buenas manos 
+                  porque corrige tu postura consiguiendo ser precisa 
+                  y delicada a la vez. Su enseñanza del yoga es muy 
+                  completa, sabe muchísimo. Toda la clase se desarrolla 
+                  en una atmósfera serena y sales de allí relajada y 
+                  con un montón de energías positivas!"</p>
+                <p class="card-text"><small class="text-muted">Caroline, Granada (ES)</small></p>
+              </div>
+            </div>
+
+            <div id="testo-card" class="card p-3 text-center">
+              <div class="card-body">
+                <p class="card-text">"Mon compagnon et moi-même avons eu la chance de participer 
+                  à plusieurs cours privatifs de Christine (en personne ainsi 
+                  que par Zoom). Christine est à l'écoute de ses élèves, 
+                  elle donne ses cours avec passion et aime partager ses 
+                  connaissances. Nous apprécions particulièrement sa capacité 
+                  à adapter ses cours en fonction des besoins et souhaits 
+                  de chacun. Aussi ses cours sont-ils  un pur moment 
+                  d’évasion. Mon compagnon et moi-même adorons y participer. 
+                  Nous les recommandons vivement à quiconque souhaite se 
+                  faire plaisir."</p>
+                <p class="card-text"><small class="text-muted">Katia et Dorian, Luxembourg (LU)</small></p>
+              </div>
+            </div>
+
+            <div id="testo-card" class="card p-3 text-center">
+              <div class="card-body">
+                <p class="card-text">"J'ai adoré le cours avec Christine! Ses cours sont très 
+                  bien préparés, et se déroulent suivant un fil directeur. 
+                  Passant des échauffements appropriés, par différents 
+                  types de respiration, jusqu'aux asanas bien expliqués. 
+                  Elle utilise également les mantras. Le tout dans 
+                  une approche douce et sécuritaire."</p>
+                <p class="card-text"><small class="text-muted">Isabelle, Bienne (CH)</small></p>
+              </div>
+            </div>
+
+            <div id="testo-card" class="card p-3 text-center">
+              <div class="card-body">
+                <p class="card-text">"Je pratique le yoga de façon régulière à Bruxelles 
+                  et j'ai eu la chance de suivre plusieurs cours 
+                  particuliers avec Christine. Ces cours ont été 
+                  révélateurs pour moi grâce à ses corrections 
+                  pointues. Nous avons effectué des postures 
+                  accessibles à tous les niveaux. Malgré cela, 
+                  j'ai découvert des muscles dont je ne soupçonnais 
+                  pas l'existence et des façons d'affiner mes 
+                  postures dont je n'avais pas conscience.  Je 
+                  recommande vivement de suivre quelques cours 
+                  particuliers avec Christine pour approfondir 
+                  votre pratique ou aborder des besoins spécifiques. 
+                  Merci Christine pour tous ces merveilleux conseils."</p>
+                <p class="card-text"><small class="text-muted">Magali, Bruxelles (BE)</small></p>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- <div id="test-card">
             <img id="small-card-icon" src="./images/one.svg" alt="">
             <p id="card-text">
               "Me gusta hacer yoga con Christine, ayuda a liberar la 
@@ -278,7 +391,9 @@
             <p class="test-card-bottom">
               <b>Magali, Bruxelles (BE)</b>
             </p>
-          </div>
+          </div> -->
+
+
         </div>
 
         <div id="break2">
@@ -444,3 +559,7 @@
     </div>
 </body>
 </html>
+
+<script>
+
+</script>

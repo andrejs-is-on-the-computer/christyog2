@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: 'Helvetica', sans-serif;
-    /* color: rgb(66, 66, 66); */
 }
 
 hr {
@@ -16,8 +14,6 @@ hr {
     height: 2px;
     background-size: 40px 40px;
     background-color: #CE97CE;
-    /* background-color: #c973c9; */
-    /* border-radius: 10%; */
 }
 
 #hr-break {
@@ -59,11 +55,6 @@ h2 {
 
 .card {
     border-radius: 10px;
-}
-
-.card-header {
-    /* background-color: #ce97ce; */
-    /* color: #ffffff; */
 }
 
 #header {
@@ -110,14 +101,15 @@ h2 {
     background: #ffffff;
     grid-area: content2;
     padding: 50px 50px;
-    display: grid;
+    /* display: grid;
     gap: 50px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; */
     
 }
 
 .main-layout{
-    display: grid;
+    width:100%;
+    /* display: grid; */
     /* height: 100vh; */
     padding: 0;
     margin: 0;
@@ -170,9 +162,7 @@ h2 {
     "nav nav nav"
     "main main main"
     "side1 content1 side2"
-    "side1 classes-cards side2"
-    "side1 offers-title side2"
-    "side1 classes-offers side2"
+    "classes-cards classes-cards classes-cards"
     "footer footer footer"
     ;
 }
@@ -181,8 +171,46 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     grid-area: classes-cards;
+    display: grid;
     width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "group-banner group-banner group-banner"
+    "group-photo group-info group-info"
+    "private-banner private-banner private-banner"
+    "private-info private-info private-photo"
+    ;
+
 }
+
+#group-banner {grid-area: group-banner;} #group-photo {grid-area: group-photo;} #group-info {grid-area: group-info;}
+#private-banner {grid-area: private-banner;} #private-photo {grid-area: private-photo;} #private-info {grid-area: private-info;}
+
+#group-banner, #private-banner{
+    background-color: #AC66AC;
+    color: white;
+    text-align: center;
+}
+
+#group-info, #private-info {
+    padding: 40px;
+}
+
+#group-photo {
+    /* grid-area: group-photo; */
+    background-image: url(class2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+#private-photo {
+    background-image: url(classlap.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
 
 #offers-title {
     grid-area: offers-title;
@@ -246,7 +274,6 @@ h2 {
     color: #CE97CE;
     border-style: solid;
     border-width: 0px 0px 2px 0px;
-    /* border-bottom: #424242; */
 }
 
 #group-select:hover, #group-select:active, #private-select:hover, #private-select:active 
@@ -308,13 +335,13 @@ h2 {
     /* position: relative; */
 }
 
-#classes-image-1 {
+/* #classes-image-1 {
     background-image: url(classlap.jpg);
-}
+} */
 
-#classes-image-2 {
+/* #classes-image-2 {
     background-image: url(class2.jpg);
-}
+} */
 
 .btn-primary {
     background-color: #AC66AC;
@@ -328,7 +355,7 @@ nav, .navbar {
     position: fixed;
     /* display: grid; */
     /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-    min-height: 5vh;
+    /* height: 8vh; */
     color: white;
     align-items: center;
     background: #AC66AC;
@@ -339,6 +366,7 @@ nav, .navbar {
     top: 0;
     transition: top 0.3s;
     font-size: 1.8rem;
+    padding: 0px;
 }
 
 .offer-layout {
@@ -408,13 +436,37 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 }
 
 .nav-link {
-    /* padding: 3px 40px;
-    margin: 0px 30px; */
-    /* padding-bottom: 3px; */
-    width: 100px;
+    width: 200px;
+    padding: 0px;
 }
 
-@media only screen and (max-width: 860px){
+#navbarNavDropdown, .navbar-nav, .nav-item, .nav-link{
+    height: 60px;
+}
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+  }
+
+@media only screen and (max-width: 800px){
+
+    #navcollapse {
+        margin: 10px auto;
+    }
+
+    .nav-item {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .nav-link, .nav-item {
+        width: 100%;
+    }
 
     .main-layout{
         grid-template-columns: 1fr;
@@ -449,6 +501,7 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
         "break1"
         "content-info-head"
         "intro-layout"
+        "intro-layout-2"
         "break2"
         "wide-image"
         "footer"
@@ -640,8 +693,6 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
     margin-right: auto;
 }
 
-
-
 #intro-image-2 {
     height: auto;
     width: 320px;
@@ -657,11 +708,11 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
     margin-bottom: auto;
 }
 
-.carousel {
+#carousel_info {
     width:100%;
 }
 
-.carousel-item {
+#carousel_item_info {
     position: relative;
     height:90vh;
 }
@@ -726,7 +777,7 @@ main {
     display: float;
 }
 
-.bg, .bg-info, .bg-class {
+.bg, .bg-info, .bg-class, .bg-offer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -744,11 +795,15 @@ main {
 }
 
 .bg-class {
-    background-image: url("peaceclass.jpg");
+    background-image: url("Dorothee\ 1.png");
+}
+
+.bg-offer {
+    background-image: url("yoga_group1.jpg");
 }
 
 .headline {
-    margin-top: 200px;
+    margin-top: 90px;
     font-size: 60px;
     color: white;
     z-index: 3;
@@ -798,6 +853,13 @@ main {
     width: 90%;
     min-width: 250px;
     border-radius: 16px;
+    background: #ffffff;
+    color: #3b3b3b;
+    box-shadow: 0.6rem 1rem 2rem #3d3d3d8f;
+}
+
+#testo-card {
+    /* border-radius: 16px; */
     background: #ffffff;
     color: #3b3b3b;
     box-shadow: 0.6rem 1rem 2rem #3d3d3d8f;

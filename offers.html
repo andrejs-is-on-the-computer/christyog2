@@ -13,6 +13,41 @@
     <title>Yoga Christine</title>
 </head>
 <body>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form name="enquiry-form" method="post" netlify>
+            <div class="form-group">
+              <label for="name" class="col-form-label">Name:</label>
+              <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-form-label">Email:</label>
+              <input type="text" class="form-control" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <div class="offer-layout">
       <nav id="navbar" class="navbar navbar-expand-md navbar-light md-light">
         <button id="navcollapse" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,12 +140,26 @@
                     <b>Price of the pack: 129 €</b>
                 </p>
                 <br>
+
+
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button> -->
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button> -->
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
+
                 <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
                     <div style="width: 50%; float: left; padding: 5px;">
-                      <button style="width:100%;" type="button" class="btn btn-primary">BOOKING</button>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                      data-whatever="Conquer my Insomia" 
+                      data-text="I would like to book the 'Conquer my Insomia' package"
+                      style="width:100%;">BOOKING</button>
+                      <!-- <button style="width:100%;" type="button" class="btn btn-primary">BOOKING</button> -->
                     </div>
                     <div style="width:50%; float: left; padding: 5px;">
-                      <button style="width:100%;" class="btn btn-primary">INFO</button>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                      data-whatever="Conquer my Insomia" 
+                      data-text="I would like to know more about the 'Conquer my Insomia' package"
+                      style="width:100%;">INFO</button>
+                      <!-- <button style="width:100%;" class="btn btn-primary">INFO</button> -->
                     </div>
                 </div>
 
@@ -249,11 +298,19 @@
             </div>
         </div>
         <div id="side2"></div>
-        <!-- <div id="side3">side3</div>
-        <div id="side4">side4</div>
-        <div id="side5">side5</div>
-        <div id="side6">side6</div> -->
         <footer></footer>
     </div>
 </body>
 </html>
+
+<script>
+  $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget)
+    var recipient = button.data('whatever')
+    var content = button.data('text')
+    var modal = $(this)
+    // modal.find('.modal-title').text(recipient)
+    modal.find('.modal-title').text(recipient)
+    modal.find('.modal-body textarea').val(content)
+  })
+</script>

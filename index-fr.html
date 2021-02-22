@@ -29,31 +29,31 @@
             <li class="nav-item colah-nav">
               <a class="nav-link" href="offers.html">
                 <span class="bi bi-box-seam"></span>
-                <p id="small-nav-text">PACKAGES</p>
+                <p id="small-nav-text">PROGRAMMES</p>
               </a>
             </li>
             <li class="nav-item colah-nav">
               <a class="nav-link" href="classes.html">
                 <span class="bi bi-book-half"></span>
-                <p id="small-nav-text">CLASSES</p>
+                <p id="small-nav-text">COURS</p>
               </a>
             </li>
             <li class="nav-item colah-nav">
               <a class="nav-link" href="info.html">
               <span class="bi bi-info-circle-fill"></span>
-              <p id="small-nav-text">ABOUT</p>
+              <p id="small-nav-text">A PROPOS</p>
             </a>
             </li>
           </ul>
         </div>
-        <!-- <a href="index-fr.html">LINK</a> -->
+        
         <div id="nav-lang" class="btn-group btn-group-toggle" data-toggle="buttons">
-          <a href="index-fr.html" id="lang-fra" class="btn btn-secondary active">
-              <input href="index-fr.html" type="radio" name="options" id="option1">
-          </a>
-          <button id="lang-esp" class="btn btn-secondary">
-            <input type="radio" name="options" id="option2" checked>
-          </button>
+          <label id="lang-fra" class="btn btn-secondary active">
+            <input href="index-fr.html" type="radio" name="options" id="option1" checked>
+          </label>
+          <label id="lang-esp" class="btn btn-secondary">
+            <input type="radio" name="options" id="option2">
+          </label>
         </div>
 
       </nav>
@@ -72,6 +72,38 @@
               Welcome to my yoga website!
             </p>
         </div>
+
+        <div id="intro-cards">
+          <a href="classes.html" id="card">
+              <img id="small-card-icon" src="./images/one.svg" alt="">
+              <hr>
+              <p class="card-text" style="color: black;">
+                Soyez les bienvenus au studio Yoga avec Christine. 
+                Découvrez les cours
+              </p>
+            </a>
+          <a href="offers.html" id="card">
+            <img id="small-card-icon" src="./images/one.svg" alt="">
+            <hr>
+            <p class="card-text" style="color: black;">
+              Programmes complets que je propose pour améliorer votre quotidien. 
+            </p>
+          </a>
+          <a href="info.html#intro-head-3" id="card">
+              <img id="small-card-icon" src="./images/two.svg" alt="">
+              <hr>
+              <p class="card-text" style="color: black;">
+                Désirez-vous en savoir plus?  Faites ma connaissance
+              </p>
+          </a>
+          <a href="info.html#intro-head" id="card">
+              <img id="small-card-icon" src="./images/three.svg" alt="">
+              <hr>
+              <p class="card-text" style="color: black;">
+                Découvrez mon approche du yoga? 
+              </p>
+          </a>
+      </div>
         
         <div id="carousel_info" class="carousel slide" data-ride="carousel">
 
@@ -79,7 +111,8 @@
           <ul class="carousel-indicators">
             <li data-target="#carousel_info" data-slide-to="0" class="active"></li>
             <li data-target="#carousel_info" data-slide-to="1"></li>
-            <li data-target="#carousel_info" data-slide-to="0"></li>
+            <li data-target="#carousel_info" data-slide-to="2"></li>
+            <li data-target="#carousel_info" data-slide-to="3"></li>
           </ul>
       
           <!-- The slideshow -->
@@ -87,14 +120,11 @@
             <a id="carousel_item_info" href="offers.html" class="carousel-item active">
               <img src="images/free1.jpg" alt="Los Angeles">
               <div id="caro-text" class="carousel-caption">
-                <h4 id="colah">Packages</h4>
+                <h4 id="colah">Le yoga est un art de vivre au quotidien. </h4>
                 <p id="colah">
-                  To be able to respond more individually to specific needs, 
-                  I offer a set of programs developed according to key themes. 
-                  These different programs include private lessons developed 
-                  specifically for you according to your physical (degree of 
-                  flexibility, possible pain in certain joints) and emotional 
-                  aptitude after an individual interview.
+                  Vous guider vers une vie harmonieuse grâce à 
+                  une pratique bienveillante et en toute sécurité 
+                  est mon souhait le plus cher.
                 </p>
                 <div style="float: left; padding: 5px;">
                   <button type="button" class="btn btn-primary">Learn more</button>
@@ -116,16 +146,45 @@
             <a id="carousel_item_info" href="info.html" class="carousel-item">
               <img src="images/mountaintop.jpg" alt="New York">
               <div id="caro-text" class="carousel-caption">
-                <h5 id="colah">About Yoga con Christine</h5>
+                <h5 id="colah">Le yoga nous offre de:</h5>
                 <p id="colah">
                   <ul id="colah">
-                    <li id="colah">Yoga is beneficial for all of us. You should neither have a 
-                      perfect body, nor be young, flexible or athletic.</li>
-                    <li id="colah">I mainly teach Hatha Yoga with the fundamental basis of body 
-                      alignment and the safe and benevolent execution of postures.</li>
-                    <li id="colah">I wish to offer the participants in my classes a harmonious 
-                      life through a benevolent and safe practice of yoga adapted to the needs of each student.</li>
+                    <li id="colah">Renforcer notre force physique pour nous sentir stable 
+                      et équilibré </li>
+                    <li id="colah">Renforcer notre flexibilité pour développer une attitude 
+                      positive et ouverte face aux événements de la vie  </li>
+                    <li id="colah">Établir une connexion avec notre respiration, 
+                      porte d´entrée à notre système nerveux</li>
+                    <li id="colah">
+                      Être, plutôt que faire, en vivant pleinement le moment présent.
+                    </li>
                   </ul>
+                </p>
+                <div style="float: left; padding: 5px;">
+                  <button type="button" class="btn btn-primary">Apprendre encore plus</button>
+                </div>
+              </div>
+            </a>
+            <a id="carousel_item_info" href="offers.html" class="carousel-item">
+              <img src="images/free2.jpg" alt="Chicago">
+              <div id="caro-text" class="carousel-caption">
+                <!-- <h5 id="colah">Group + Private Classes</h5> -->
+                <p id="colah">
+                  <ul id="colah">
+                    <li id="colah">
+                      Avez-vous des insomnies? 
+                    </li>
+                    <li id="colah">
+                      Souffrez-vous d'angoisse ou de stress?
+                    </li>
+                    <li id="colah">
+                      Manquez-vous de vitalité?
+                    </li>
+                    <li id="colah">
+                      Souffrez-vous de migraines?
+                    </li>
+                  </ul>
+                  J'ai développé des programmes spécifiques pour vous
                 </p>
                 <div style="float: left; padding: 5px;">
                   <button type="button" class="btn btn-primary">Learn more</button>

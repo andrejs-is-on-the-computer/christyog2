@@ -6,7 +6,7 @@
 }
 
 hr {
-    border: none;
+    /* border: none; */
     width: 80%;
     margin: auto;
     margin-top: 5%;
@@ -377,8 +377,8 @@ h2 {
 .navbar {
     grid-area: nav;
     position: fixed;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
     color: white;
     align-items: center;
     background: #AC66AC;

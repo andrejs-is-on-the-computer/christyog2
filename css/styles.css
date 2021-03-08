@@ -107,6 +107,26 @@ h2 {
     
 }
 
+.info-layout{
+    width:100%;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "side1 content1 side2"
+    /* "side1 intro-cards side2" */
+    "carousel carousel carousel"
+    "side3 break1 side4"
+    "side3 content2 side4"
+    "side3 break2 side4"
+    "wide-image wide-image wide-image"
+    "side5 break3 side6"
+    "footer footer footer"
+    ;
+}
+
 .main-layout{
     width:100%;
     padding: 0;
@@ -238,15 +258,18 @@ h2 {
     margin-right: auto;
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
     grid-area: intro-layout;
     grid-template-areas:
         'intro-head intro-head intro-head' 
-        'intro-image intro-text intro-text'
+        'side3 intro-image side4'
+        'side3 intro-text side4'
         'intro-head-2 intro-head-2 intro-head-2'
-        'intro-text-2 intro-text-2 intro-image-2'
+        'side5 intro-image-2 side6'
+        'side5 intro-text-2 side6'
         'intro-head-3 intro-head-3 intro-head-3'
-        'intro-image-3 intro-text-3 intro-text-3'
+        'side7 intro-image-3 side8'
+        'side7 intro-text-3 side8'
         ;
 }
 
@@ -265,15 +288,15 @@ h2 {
 }
 
 #intro-image {
-    background-image: url(dorothee_small.png);
+    background-image: url(praying_group.jpg);
 }
 
 #intro-image-3 {
-    background-image: url(chris_portrait.png);
+    background-image: url(chris_wide_edit.jpg);
 }
 
 #intro-image, #intro-image-2, #intro-image-3 {
-    height: auto;
+    height: 500px;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -288,6 +311,31 @@ h2 {
     margin-top: auto; 
     margin-bottom: auto;
 }
+
+#intro-text-2 {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    /* grid-template-rows: repeat(3, 1fr); */
+    gap: 0px 0px;
+    grid-template-areas:
+      "inf-im-1 inf-te-1 inf-te-1"
+      "inf-te-2 inf-te-2 inf-im-2"
+      "inf-im-3 inf-te-3 inf-te-3";
+  }
+  
+  #inf-im-1 { grid-area: inf-im-1; }
+  
+  #inf-te-1 { grid-area: inf-te-1; }
+  
+  #inf-im-2 { grid-area: inf-im-2; }
+  
+  #inf-te-2 { grid-area: inf-te-2; }
+  
+  #inf-im-3 { grid-area: inf-im-3; }
+  
+  #inf-te-3 { grid-area: inf-te-3; }
+  
+
 
 #info-card {
     margin-left: auto; 
@@ -590,7 +638,7 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
         height: 30vh;
     }
 
-    #side1, #side2, #side3, #side4, #side5, #side6 {
+    #side1, #side2, #side3, #side4, #side5, #side6, #side7, #side8 {
         display:none;
     }
 
@@ -1006,12 +1054,12 @@ section {
     grid-area: carousel;
 }
 
-#side1, #side3, #side5 {
+#side1, #side3, #side5, #side7 {
     background: #E8C7E8;
     background: linear-gradient(90deg, #E8C7E8 0%, rgba(255,255,255,1) 40%);
 }
 
-#side2, #side4, #side6 {
+#side2, #side4, #side6, #side8 {
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 60%, #E8C7E8 100%);
 }
@@ -1033,6 +1081,14 @@ section {
 }
 #side6{
     grid-area: side6;
+}
+
+#side7{
+    grid-area: side7;
+}
+
+#side8 {
+    grid-area: side8;
 }
 
 #card-icon{

@@ -3,10 +3,10 @@ var scrollbar = true;
 var ua = navigator.userAgent.toLowerCase(); 
 if (ua.indexOf('safari') != -1) { 
   if (ua.indexOf('chrome') > -1) {
-    alert("CHROME") // Chrome
+    // alert("CHROME") // Chrome
     // scrollbar = true;
   } else {
-    alert("SAFARI") // Safari
+    // alert("SAFARI") // Safari
     scrollbar = false;
   }
 }

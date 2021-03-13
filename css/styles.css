@@ -265,11 +265,10 @@ h2 {
         'side3 intro-image side4'
         'side3 intro-text side4'
         'intro-head-2 intro-head-2 intro-head-2'
-        'side5 intro-image-2 side6'
+        /* 'side5 intro-image-2 side6' */
         'side5 intro-text-2 side6'
         'intro-head-3 intro-head-3 intro-head-3'
-        'side7 intro-image-3 side8'
-        'side7 intro-text-3 side8'
+        'info-section-3'
         ;
 }
 
@@ -310,6 +309,11 @@ h2 {
     padding: 50px;
     margin-top: auto; 
     margin-bottom: auto;
+}
+
+#info-section-3 {
+    grid-area: info-section-3;
+    display: grid;
 }
 
 #intro-text-3 {

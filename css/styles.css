@@ -116,7 +116,6 @@ h2 {
     "nav nav nav"
     "main main main"
     "side1 content1 side2"
-    /* "side1 intro-cards side2" */
     "carousel carousel carousel"
     "side3 break1 side4"
     "side3 content2 side4"
@@ -136,7 +135,8 @@ h2 {
     "nav nav nav"
     "main main main"
     "side1 content1 side2"
-    /* "side1 intro-cards side2" */
+    "side1 intro-cards side2"
+    "side1 welcome-msg side2"
     "carousel carousel carousel"
     "side3 break1 side4"
     "side3 content2 side4"
@@ -194,7 +194,7 @@ h2 {
 
 #group-photo {
     /* grid-area: group-photo; */
-    background-image: url(class2.jpg);
+    background-image: url(peaceclass.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -292,7 +292,7 @@ h2 {
 }
 
 #intro-image-3 {
-    background-image: url(chris_wide_edit.jpg);
+    background-image: url(chris_portrait.png);
 }
 
 #intro-image, #intro-image-2, #intro-image-3 {
@@ -310,6 +310,13 @@ h2 {
     padding: 50px;
     margin-top: auto; 
     margin-bottom: auto;
+}
+
+#intro-text-3 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-areas:
+    'prof-img info-text'
 }
 
 #intro-text-2 {
@@ -572,6 +579,7 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
         "main"
         "content1"
         "intro-cards"
+        "welcome-msg"
         "carousel"
         "break1"
         "content2"
@@ -643,7 +651,7 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
     }
 
     #content2{
-        /* padding: 20px; */
+        padding: 5px;
         grid-template-columns: 1fr;
         grid-template-areas:
         "image1"
@@ -718,14 +726,14 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 
 #offerimage1 {
     grid-area: offerimage1;
-    background-image: url(relaxed_woman.jpg);
+    background-image: url(insomnia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
 } 
 #offerimage2 {
     grid-area: offerimage2;
-    background-image: url(anxiety2.jpg);
+    background-image: url(anxiety.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -803,7 +811,7 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 
 #colah, #main-text, .headline {
     color: #ffffff;
-    text-shadow: 0.5px 0.5px 3px #1f1f1f;
+    text-shadow: 2px 2px 3px #1a1a1a;
 }
 
 #main-text {
@@ -841,11 +849,11 @@ main {
 }
 
 .bg-class {
-    background-image: url("Dorothee\ 1.png");
+    background-image: url("yoga_group1.jpg");
 }
 
 .bg-offer {
-    background-image: url("yoga_group1.jpg");
+    background-image: url("pexels-photo-3772612.jpeg");
 }
 
 .headline {
@@ -893,6 +901,17 @@ main {
     gap: 1rem;
     justify-items: center;
     margin-bottom: 100px;
+}
+
+#welcome-message, #testimonies {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#welcome-message {
+    grid-area: welcome-msg;
 }
 
 #card, #info-card, #offers-card, #test-card {

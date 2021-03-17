@@ -107,25 +107,6 @@ h2 {
     
 }
 
-.info-layout{
-    width:100%;
-    padding: 0;
-    margin: 0;
-    grid-template-columns: 0.1fr 1fr 0.1fr;
-    grid-template-areas:
-    "nav nav nav"
-    "main main main"
-    "side1 content1 side2"
-    "carousel carousel carousel"
-    "side3 break1 side4"
-    "side3 content2 side4"
-    "side3 break2 side4"
-    "wide-image wide-image wide-image"
-    "side5 break3 side6"
-    "footer footer footer"
-    ;
-}
-
 .main-layout{
     width:100%;
     padding: 0;
@@ -144,6 +125,53 @@ h2 {
     "wide-image wide-image wide-image"
     "side5 break3 side6"
     "footer footer footer"
+    ;
+}
+
+.info-layout{
+    display:grid;
+    width:100%;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "intro-head intro-head intro-head"
+    "side1 intro-text side2"
+    "intro-head-2 intro-head-2 intro-head-2"
+    'side3 intro-text-2 side4'
+    'intro-head-3 intro-head-3 intro-head-3'
+    'side5 info-3-cont side6'
+    "footer footer footer"
+    ;
+}
+
+#intro-layout {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-area: intro-layout;
+    grid-template-areas:
+        'intro-head intro-head intro-head' 
+        'side3 intro-image side4'
+        'side3 intro-text side4'
+        'intro-head-2 intro-head-2 intro-head-2'
+        /* 'side5 intro-image-2 side6' */
+        'side5 intro-text-2 side6'
+        'intro-head-3 intro-head-3 intro-head-3'
+        'info-3-cont info-3-cont info-3-cont'
+        ;
+}
+
+#info-3-content {
+    display: grid;
+    grid-area: info-3-cont;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-areas:
+    'intro-image-3 intro-text-3'
     ;
 }
 
@@ -219,24 +247,6 @@ h2 {
     width: 100%;
 }
 
-.info-layout {
-    display: grid;
-    /* height: 100vh; */
-    padding: 0;
-    margin: 0;
-    grid-template-columns: 0.1fr 1fr 0.1fr;
-    /* grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 1.2fr 0.8fr; */
-    grid-template-areas:
-    "nav nav nav"
-    "main main main"
-    "side1 break1 side2"
-    "side1 content-info-head side2"
-    "intro-layout intro-layout intro-layout"
-    "wide-image wide-image wide-image"
-    "footer footer footer"
-    ;
-}
-
 #classes-cards{
     margin-left: auto;
     margin-right: auto;
@@ -253,24 +263,7 @@ h2 {
 
 }
 
-#intro-layout {
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 0.1fr 1fr 0.1fr;
-    grid-area: intro-layout;
-    grid-template-areas:
-        'intro-head intro-head intro-head' 
-        'side3 intro-image side4'
-        'side3 intro-text side4'
-        'intro-head-2 intro-head-2 intro-head-2'
-        /* 'side5 intro-image-2 side6' */
-        'side5 intro-text-2 side6'
-        'intro-head-3 intro-head-3 intro-head-3'
-        'info-section-3'
-        ;
-}
+
 
 #intro-head{grid-area: intro-head;} #intro-head-2{grid-area: intro-head-2;} #intro-head-3{grid-area: intro-head-3;}
 #intro-image{grid-area: intro-image;} #intro-image-2 {grid-area: intro-image-2;} #intro-image-3{grid-area: intro-image-3;}
@@ -287,7 +280,7 @@ h2 {
 }
 
 #intro-image {
-    background-image: url(praying_group.jpg);
+    background-image: url(christinepose.jpg);
 }
 
 #intro-image-3 {
@@ -305,23 +298,23 @@ h2 {
     /* background-attachment: fixed; */
 }
 
+#intro-image-3 {
+    height: 100%;
+    width: 100%;
+}
+
 #intro-text, #intro-text-2, #intro-text-3 {
     padding: 50px;
     margin-top: auto; 
     margin-bottom: auto;
 }
 
-#info-section-3 {
-    grid-area: info-section-3;
-    display: grid;
-}
-
-#intro-text-3 {
+/* #intro-text-3 {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-template-areas:
     'prof-img info-text'
-}
+} */
 
 #intro-text-2 {
     display: grid;
@@ -345,6 +338,11 @@ h2 {
   #inf-im-3 { grid-area: inf-im-3; }
   
   #inf-te-3 { grid-area: inf-te-3; }
+
+  #inf-im-1, #inf-im-2, #inf-im-3 {
+      margin-left: auto;
+      margin-right: auto;
+  }
   
 
 
@@ -594,26 +592,6 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
         "footer";
     }
 
-    .info-layout {
-        display: grid;
-        /* height: 100vh; */
-        padding: 0;
-        margin: 0;
-        grid-template-columns:1fr;
-        /* grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 1.2fr 0.8fr; */
-        grid-template-areas:
-        "nav"
-        "main"
-        "break1"
-        "content-info-head"
-        "intro-layout"
-        "intro-layout-2"
-        "break2"
-        "wide-image"
-        "footer"
-        ;
-    }
-
     .offer-layout {
         grid-template-columns:1fr;
         grid-template-areas:
@@ -669,14 +647,6 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 
     #classes-info {
         grid-template-columns: 100%;
-    }
-
-    #intro-layout {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "intro-head"
-        "intro-image"
-        "intro-text";
     }
 
     #intro-image {
@@ -1120,6 +1090,13 @@ section {
     margin: 50px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#card-icon-large{
+    height: 100px;
+    width: auto;
+    margin: 50px;
+    margin: auto;
 }
 
 footer{

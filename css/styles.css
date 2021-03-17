@@ -343,7 +343,28 @@ h2 {
       margin-left: auto;
       margin-right: auto;
   }
+
+  #card-inf {
+    padding: 50px;
+    /* height: 200px; */
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+    background: #ffffff;
+    color: #3b3b3b;
+    box-shadow: 0.6rem 1rem 2rem #3d3d3d8f;
+}
   
+  #card-icon-large{
+    height: 150px;
+    width: auto;
+    /* padding: 10px; */
+    /* margin: 50px; */
+    /* margin: auto; */
+}
 
 
 #info-card {
@@ -1090,13 +1111,6 @@ section {
     margin: 50px;
     margin-left: auto;
     margin-right: auto;
-}
-
-#card-icon-large{
-    height: 100px;
-    width: auto;
-    margin: 50px;
-    margin: auto;
 }
 
 footer{

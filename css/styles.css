@@ -301,6 +301,7 @@ h2 {
 #intro-image-3 {
     height: 100%;
     width: 100%;
+    max-width: 410px;
 }
 
 #intro-text, #intro-text-2, #intro-text-3 {
@@ -346,6 +347,7 @@ h2 {
 
   #card-inf {
     padding: 50px;
+    margin: 30px;
     /* height: 200px; */
     position: relative;
     flex-direction: column;
@@ -393,6 +395,16 @@ h2 {
     color: #CE97CE;
     border-style: solid;
     border-width: 0px 0px 2px 0px;
+}
+
+.btn-secondary {
+    background-color: #c981c9;
+    border: none;
+}
+
+.btn.btn-secondary.active {
+    background-color: #CE97CE !important;
+    border: none !important;
 }
 
 #group-select:hover, #group-select:active, #private-select:hover, #private-select:active 
@@ -472,7 +484,7 @@ h2 {
 
 #nav-lang {
     justify-self: end;
-    margin-right: 20px;
+    margin: 10px;
 }
 
 #lang-esp, #lang-fra {
@@ -611,6 +623,40 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
         "break3"
         /* "content3" */
         "footer";
+    }
+
+    .info-layout{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "intro-head"
+        "intro-text"
+        "intro-head-2"
+        'intro-text-2'
+        'intro-head-3'
+        'info-3-cont'
+        "footer"
+        ;
+    }
+
+    #intro-text-2 {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "inf-im-1"
+          'inf-te-1'
+          "inf-im-2"
+          "inf-te-2"
+          "inf-im-3"
+          "inf-te-3";
+      }
+
+    #info-3-content {
+        grid-template-columns:1fr;
+        grid-template-areas:
+        'intro-image-3'
+        'intro-text-3'
+        ;
     }
 
     .offer-layout {

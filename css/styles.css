@@ -220,19 +220,19 @@ h2 {
     padding: 40px;
 }
 
-#group-photo {
-    /* grid-area: group-photo; */
-    background-image: url(peaceclass.jpg);
+#group-photo, #private-photo {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
+    min-height: 350px;
+}
+
+#group-photo {
+    background-image: url(group_class_edit.jpg);
 }
 
 #private-photo {
-    background-image: url(classlap.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
+    background-image: url(priv_class_cl-min.JPG);
 }
 
 
@@ -246,24 +246,6 @@ h2 {
     grid-area: classes-offers;
     width: 100%;
 }
-
-#classes-cards{
-    margin-left: auto;
-    margin-right: auto;
-    grid-area: classes-cards;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "group-banner group-banner group-banner"
-    "group-photo group-info group-info"
-    "private-banner private-banner private-banner"
-    "private-info private-info private-photo"
-    ;
-
-}
-
-
 
 #intro-head{grid-area: intro-head;} #intro-head-2{grid-area: intro-head-2;} #intro-head-3{grid-area: intro-head-3;}
 #intro-image{grid-area: intro-image;} #intro-image-2 {grid-area: intro-image-2;} #intro-image-3{grid-area: intro-image-3;}
@@ -302,6 +284,7 @@ h2 {
     height: 100%;
     width: 100%;
     max-width: 410px;
+    min-height: 350px;
 }
 
 #intro-text, #intro-text-2, #intro-text-3 {
@@ -687,6 +670,30 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
         "offertext4"
         ;
     }
+
+    .class-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "content1"
+        "classes-cards"
+        "footer"
+        ;
+    }
+
+    #classes-cards{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "group-banner"
+        "group-photo"
+        "group-info"
+        "private-banner"
+        "private-photo"
+        "private-info"
+        ;
+    }
+
     #offerimage1, #offerimage2, #offerimage3, #offerimage4 {
         height: 50vh;
         }
@@ -882,19 +889,19 @@ main {
 }
 
 .bg {
-    background-image: url("chris_wide_edit.jpg");
+    background-image: url("chris_wide_edit-min.jpg");
   }
 
 .bg-info {
-    background-image: url("Katia\ 1.png");
+    background-image: url("info-head.jpg");
 }
 
 .bg-class {
-    background-image: url("yoga_group1.jpg");
+    background-image: url("yoga_group-min-ed.jpg");
 }
 
 .bg-offer {
-    background-image: url("pexels-photo-3772612.jpeg");
+    background-image: url("offers_banner.jpg");
 }
 
 .headline {

@@ -13,6 +13,45 @@
     <title>Yoga Christine</title>
 </head>
 <body>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form name="enquiry-form" method="post" netlify>
+          <div class="modal-body">
+          
+              <div class="form-group">
+                <label for="name" class="col-form-label">Nom:</label>
+                <input type="text" class="form-control" id="name" name="name">
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-form-label">E-mail:</label>
+                <input type="text" class="form-control" id="email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="phone" class="col-form-label">Téléphone:</label>
+                <input type="text" class="form-control" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text" name="message-text"></textarea>
+              </div>
+          
+          </div>
+          <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+
     <div class="class-layout">
 
       <nav id="navbar" class="navbar navbar-expand-md navbar-light md-light">
@@ -21,10 +60,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav" style="text-align: center; margin-left: auto; margin-right: auto;">
-            <li class="nav-item">
-              <a class="nav-link active" href="index-fr.html">
+            <li class="nav-item colah-nav">
+              <a class="nav-link" href="index.html">
                 <span class="bi bi-house-door-fill"></span>
-                <p id="small-nav-text">HOGAR</p> 
+                <p id="small-nav-text">INICIO</p> 
               </a>
             </li>
             <li class="nav-item colah-nav">
@@ -45,135 +84,195 @@
               <p id="small-nav-text">SOBRE</p>
             </a>
             </li>
+            <li class="nav-item colah-nav">
+              <div id="nav-lang" class="btn-group btn-group-toggle" data-toggle="buttons">
+                <a href="classes-fr.html" class="btn btn-secondary">
+                  FRA
+                </label>
+                <a href="classes.html" class="btn btn-secondary active">
+                  ESP
+                </a>
+              </div>
+            </li>
           </ul>
-        </div>
-        <div id="nav-lang" class="btn-group btn-group-toggle" data-toggle="buttons">
-          <a href="classes-fr.html" id="lang-fra" class="btn btn-secondary">
-            <input href="classes-fr.html" type="radio" name="options" id="option1" checked>
-          </a>
-          <a href="classes.html" id="lang-esp" class="btn btn-secondary">
-            <input href="classes.html" type="radio" name="options" id="option2">
-          </a>
         </div>
       </nav>
         <main class="bg-class">
             <h1 class="headline">Yoga con Christine</h1>
         </main>
-        <!-- <div id="sidebar">Sidebar</div> -->
         <div id="side1"></div>
 
         <div id="content1">
           <img id="card-icon" src="./images/flower.svg" alt="">
-          <h1>Classes</h1>
+          <h1>Clases</h1>
           <hr>
-          <!-- <p>"Le Yoga ne change pas seulement la façon dont nous voyons les choses, il transforme la personne qui voit." - B.K.S Iyengar </p> -->
+          <p>
+            Las clases de yoga incluyen introducción al tema, 
+            centramiento, calentamiento, posturas (asanas), 
+            relajación con meditación (mantras) y ejercicios 
+            de respiración (pranayama). Al final de las 
+            clases grupales, concedemos 5 minutos para una 
+            puesta en común de lo vivido durante la clase, 
+            o preguntas sobre el tema de la misma. El objetivo 
+            de este intercambio es crear una cohesión de grupo 
+            en una disciplina que a menudo se practica 
+            individualmente.
+          </p>
         </div>
 
         <div id="classes-cards">
 
           <div id="group-banner">
             <h2>
-              Group Classes
+              Clases Grupales
             </h2>
           </div>
           <div id="group-photo">
-            <!-- <div id="classes-image-1"></div> -->
           </div>
           <div id="group-info">
-            I offer group lessons in Spanish in the YoyYoga school in the heart of Granada.
-                  <br><br>
-                  Classes include an introduction to the theme, centration, warm-up, postures (asanas), 
-                  relaxation with meditation (mantras) and breathing exercises (pranayama). At the end 
-                  of each group lesson, we allow 5 minutes for an exchange on feelings during the lesson, 
-                  or questions on the topic of the lesson. The objective of this exchange is to create 
-                  group coherence in a discipline often practiced individually.
-                  <hr>
-                  <b>Group lesson schedule (all levels):</b>
-                  <br>
-                  <br>
-                  Tuesday 9: 00-10: 30 and 19: 30-21: 00
-                  <br>
-                  YoyYoga - Calle Recogidas 45, 1 ° D - 18005 Granada
-                  <br>
-                  The price of a course is 15 €. The first course is free.
-                  <br>
-                  Only by appointment.
-                  <hr>
-                  <b>Due to the current pandemic, face-to-face classes are suspended and replaced by 
-                  classes on Zoom on Tuesdays from 19: 30-20: 30.</b>
-                  <br><br>
-                  These complete courses are offered in a pack of 4 courses on a specific theme (koshas, ​​hip opening, sun salutations). 
-                  <br><br>
-                  At the end of the 4 lessons, participants receive access to a video which takes up the key exercises of the theme as 
-                  well as a focus and relaxation that can then be practiced without accompaniment at home.
-                  <br>
-                  Price of group lessons by Zoom: 25 € for 4 lessons and the 30-minute video recorded on Youtube.
-                  <hr>
-                  <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
-                    <div style="width: 50%; float: left; padding: 5px;">
-                      <button style="width:100%;" type="button" class="btn btn-primary">BOOKING</button>
-                    </div>
-                    <div style="width:50%; float: left; padding: 5px;">
-                      <button style="width:100%;" class="btn btn-primary">INFO</button>
-                    </div>
-                  </div>
+            <p id="price">
+              <b>Clases virtuales en directo</b>
+            </p>
+            
+            <hr>
+            Clases grupales en español por Zoom el martes de 19:30-20:30 
+            <br><br>
+            Estas clases completas se ofrecen en un paquete 
+            de 4 sesiones sobre un tema determinado (los 
+            Koshas, la apertura de las caderas, la energía 
+            vital). Al final de las 4 clases, los 
+            participantes reciben acceso a un vídeo 
+            que retoma los ejercicios clave del tema, 
+            así como concentración y relajación que 
+            se pueden practicar sin acompañamiento en casa. 
+            <hr>
+            <b>Precio de las clases grupales por Zoom:</b>
+            <br>
+            <br>
+            25€ las 4 clases y el vídeo de 30 minutos grabado en Youtube. 
+            <br><br>
+            <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
+              <div style="width: 50%; float: left; padding: 5px;">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                data-whatever="Cours virtuels en direct" 
+                data-text='Je souhaite réserver le forfait "Cours virtuels en direct"'
+                style="width:100%;">RESERVA</button>
+              </div>
+              <div style="width:50%; float: left; padding: 5px;">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                data-whatever="Cours virtuels en direct" 
+                data-text="J'aimerais en savoir plus sur le forfait 'Cours virtuels en direct'"
+                style="width:100%;">INFORMACIÓN</button>
+              </div>
+            </div>
+            <hr>
+            <b>Clases presenciales</b>
+            <br><br>
+            Clases grupales en español en la escuela YoyYoga en el corazón de Granada.
+            <br><br>
+            <b>Horario de las clases (todos los niveles):</b>
+            <br><br>
+            <ul>
+              <li>
+                Martes 9:00-10:30 y 19:30-21:00
+              </li>
+              <li>
+                YoyYoga - Calle Recogidas 45, 1¹D - 18005 Granada
+              </li>
+              <li>
+                El precio de una clase es de 15€. La primera clase es gratuita
+              </li>
+              <li>
+                Sólo con cita previa
+              </li>
+            </ul>
+            
+            <br>
+
+            Debido a la actual pandemia, se han suspendido las clases presenciales.
+            <br>
+            <hr>
+            <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
+              <div style="width: 50%; float: left; padding: 5px;">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                data-whatever="Cours présentiels" 
+                data-text='Je souhaite réserver le forfait "Cours présentiels"'
+                style="width:100%;">RESERVA</button>
+              </div>
+              <div style="width:50%; float: left; padding: 5px;">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                data-whatever="Cours présentiels" 
+                data-text="J'aimerais en savoir plus sur le forfait 'Cours présentiels'"
+                style="width:100%;">INFORMACIÓN</button>
+              </div>
+            </div>
           </div>
 
           <div id="private-banner">
             <h2>
-              Private Classes
+              Clases Particulares
             </h2>
           </div>
           <div id="private-info">
-            <ul>
-              <li>
-                I don't feel comfortable in a group class
-              </li>
-              <li>
-                I have physical limitations that do not allow me to participate in a group lesson 
-                (back pain, lack of flexibility, age, overweight, shoulder or wrist pain, ...)
-              </li>
-              <li>
-                I would like personalized advice or on specific postures
-              </li>
-              <li>
-                I live in Granada but don't speak spanish
-              </li>
-              <li>
-                I want to take care of myself and make myself happy by offering myself a private lesson
-              </li>
-            </ul>
-            If you recognize yourself in one or more of these statements, a private lesson is the solution for you.
-            <hr>
-            <b>I offer 3 formulas:</b>
+            <b>¿Tienes alguna pregunta, algún deseo, algún capricho, alguna necesidad especial?</b>
             <br><br>
             <ul>
               <li>
-                60 minutes private lesson at my home (Alquería del Fargue). In good weather, we can even 
-                go out on the terrace with a view of the Sierra Nevada. The cost of a session is 40 €
+                No me siento cómodo en una clase grupal
               </li>
               <li>
-                60-minute private lesson by Zoom, for € 35.
-                Private lesson at your home (maximum 15 km from Granada center), for 50 €.
+                Tengo limitaciones físicas que no me permiten participar 
+                en una clase grupal (dolor de espalda, falta de 
+                flexibilidad, edad, sobrepeso, dolor en los hombros 
+                o en las muñecas, ...)
+              </li>
+              <li>
+                Deseo asesoramiento personalizado y/o asesoramiento para posturas específicas
+              </li>
+              <li>
+                Vivo en Granada pero no hablo español
+              </li>
+              <li>
+                Quiero cuidar de mí misma/o y regalarme un curso privado
+              </li>
+            </ul>
+            Si te reconoces en una o más de 
+            estas afirmaciones, una clase privada es la solución para ti.
+            <br><br>
+            Puedo acompañarte en español, francés, alemán o inglés.
+            <hr>
+            <b>Te propongo tres opciones:</b>
+            <br><br>
+            <ul>
+              <li>
+                Clases privadas de 60 minutos en mi 
+                domicilio (Alquería del Fargue). 
+                Con buen tiempo podemos incluso salir 
+                a la terraza con vistas a Sierra Nevada. 
+                El coste de una sesión es de 40€
+              </li>
+              <li>
+                Clase privada de 60 minutos por Zoom, por 35€
+              </li>
+              <li>
+                Clase privada en tu domicilio (hasta 15 km del centro de Granada), por 50€
               </li>
             </ul>
             <hr>
-            <b>Specific programs</b>
-            <br><br>
-            To be able to respond more individually to specific needs, I offer a set of programs developed according to key themes. 
-            These different programs include private lessons developed specifically for you according to your physical (degree 
-            of flexibility, possible pain in certain joints) and emotional aptitude after an individual interview.
-            <hr>
-            I can teach in Spanish, French, German or English.
-            
-            You can make the payment by Bizum, Paypal or bank transfer.
+            <p id="price">Puedes pagar por Bizum, Paypal o transferencia bancaria.</p>
             <hr>
             <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
               <div style="width: 50%; float: left; padding: 5px;">
-                <button style="width:100%;" type="button" class="btn btn-primary">BOOKING</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                data-whatever="Cours Privés" 
+                data-text='Je souhaite réserver le forfait "Cours Privés"'
+                style="width:100%;">RESERVA</button>
               </div>
               <div style="width:50%; float: left; padding: 5px;">
-                <button style="width:100%;" class="btn btn-primary">INFO</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                data-whatever="Cours Privés" 
+                data-text="J'aimerais en savoir plus sur le forfait 'Cours Privés'"
+                style="width:100%;">INFORMACIÓN</button>
               </div>
             </div>
             
@@ -185,148 +284,20 @@
         </div>
 
         <div id="side2"></div>
-        <!-- <div id="side3">side3</div>
-        <div id="side4">side4</div>
-        <div id="side5">side5</div>
-        <div id="side6">side6</div> -->
-
-        <!-- <div id="info-card">
-            <div id="group-select">
-              <div id="headingOne">
-                <h3 class="mb-0">
-                  <div style="padding:5px;" class="" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Private Classes
-                  </div>
-                </h3>
-              </div>
-            </div>
-            <div id="private-select">
-              <div id="headingTwo">
-                <h3 class="mb-0">
-                  <div style="padding:5px;" class="collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Group Classes
-                  </div>
-                </h3>
-              </div>
-            </div>
-            <div id="class-image">
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#info-card">
-                <div class="card-body" style="margin-top: auto; margin-bottom: auto;">
-                  <div id="classes-image-1"></div>
-                  <hr>
-                  <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
-                    <div style="width: 50%; float: left; padding: 5px;">
-                      <button style="width:100%;" type="button" class="btn btn-primary">SEE OFFERS</button>
-                    </div>
-                    <div style="width:50%; float: left; padding: 5px;">
-                      <button style="width:100%;" class="btn btn-primary">INFO</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#info-card">
-                <div class="card-body">
-                  <div id="classes-image-2"></div>
-                  <hr>
-                  <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
-                    <div style="width: 50%; float: left; padding: 5px;">
-                      <button style="width:100%;" type="button" class="btn btn-primary">BOOKING</button>
-                    </div>
-                    <div style="width:50%; float: left; padding: 5px;">
-                      <button style="width:100%;" class="btn btn-primary">INFO</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="class-info">
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#info-card">
-                <div class="card-body">
-                  <b>Private lessons:</b> do you have questions, do you have specific wishes, desires or needs?
-                  <br><br>
-                  <ul>
-                    <li>
-                      I don't feel comfortable in a group class
-                    </li>
-                    <li>
-                      I have physical limitations that do not allow me to participate in a group lesson 
-                      (back pain, lack of flexibility, age, overweight, shoulder or wrist pain, ...)
-                    </li>
-                    <li>
-                      I would like personalized advice or on specific postures
-                    </li>
-                    <li>
-                      I live in Granada but don't speak spanish
-                    </li>
-                    <li>
-                      I want to take care of myself and make myself happy by offering myself a private lesson
-                    </li>
-                  </ul>
-                  If you recognize yourself in one or more of these statements, a private lesson is the solution for you.
-                  <hr>
-                  <b>I offer 3 formulas:</b>
-                  <br><br>
-                  <ul>
-                    <li>
-                      60 minutes private lesson at my home (Alquería del Fargue). In good weather, we can even 
-                      go out on the terrace with a view of the Sierra Nevada. The cost of a session is 40 €
-                    </li>
-                    <li>
-                      60-minute private lesson by Zoom, for € 35.
-                      Private lesson at your home (maximum 15 km from Granada center), for 50 €.
-                    </li>
-                  </ul>
-                  <hr>
-                  <b>Specific programs</b>
-                  <br><br>
-                  To be able to respond more individually to specific needs, I offer a set of programs developed according to key themes. 
-                  These different programs include private lessons developed specifically for you according to your physical (degree 
-                  of flexibility, possible pain in certain joints) and emotional aptitude after an individual interview.
-                  <hr>
-                  I can teach in Spanish, French, German or English.
-                  
-                  You can make the payment by Bizum, Paypal or bank transfer.
-
-                  <hr>
-                </div>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#info-card">
-                <div class="card-body">
-                  I offer group lessons in Spanish in the YoyYoga school in the heart of Granada.
-                  <br><br>
-                  Classes include an introduction to the theme, centration, warm-up, postures (asanas), 
-                  relaxation with meditation (mantras) and breathing exercises (pranayama). At the end 
-                  of each group lesson, we allow 5 minutes for an exchange on feelings during the lesson, 
-                  or questions on the topic of the lesson. The objective of this exchange is to create 
-                  group coherence in a discipline often practiced individually.
-                  <hr>
-                  <b>Group lesson schedule (all levels):</b>
-                  <br>
-                  <br>
-                  Tuesday 9: 00-10: 30 and 19: 30-21: 00
-                  <br>
-                  YoyYoga - Calle Recogidas 45, 1 ° D - 18005 Granada
-                  <br>
-                  The price of a course is 15 €. The first course is free.
-                  <br>
-                  Only by appointment.
-                  <hr>
-                  <b>Due to the current pandemic, face-to-face classes are suspended and replaced by 
-                  classes on Zoom on Tuesdays from 19: 30-20: 30.</b>
-                  <br><br>
-                  These complete courses are offered in a pack of 4 courses on a specific theme (koshas, ​​hip opening, sun salutations). 
-                  <br><br>
-                  At the end of the 4 lessons, participants receive access to a video which takes up the key exercises of the theme as 
-                  well as a focus and relaxation that can then be practiced without accompaniment at home.
-                  <br>
-                  Price of group lessons by Zoom: 25 € for 4 lessons and the 30-minute video recorded on Youtube.
-
-                </div>
-              </div>
-            </div>
-          </div> -->
         
         <footer></footer>
     </div>
 </body>
 </html>
+
+<script>
+  $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget)
+    var recipient = button.data('whatever')
+    var content = button.data('text')
+    var modal = $(this)
+    // modal.find('.modal-title').text(recipient)
+    modal.find('.modal-title').text(recipient)
+    modal.find('.modal-body textarea').val(content)
+  })
+</script>

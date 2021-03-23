@@ -21,9 +21,9 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav" style="text-align: center; margin-left: auto; margin-right: auto;">
             <li class="nav-item colah-nav nav-active">
-              <a class="nav-link active" href="index-fr.html">
+              <a class="nav-link active" href="index.html">
                 <span class="bi bi-house-door-fill"></span>
-                <p id="small-nav-text">HOGAR</p> 
+                <p id="small-nav-text">INICIO</p> 
               </a>
             </li>
             <li class="nav-item colah-nav">
@@ -44,18 +44,20 @@
               <p id="small-nav-text">SOBRE</p>
             </a>
             </li>
+            <li class="nav-item colah-nav">
+              <div id="nav-lang" class="btn-group btn-group-toggle" data-toggle="buttons">
+                <a href="index-fr.html" class="btn btn-secondary">
+                  FRA
+                </label>
+                <a href="index.html" class="btn btn-secondary active">
+                  ESP
+                </a>
+              </div>
+            </li>
           </ul>
         </div>
-        <div id="nav-lang" class="btn-group btn-group-toggle" data-toggle="buttons">
-          <a href="index-fr.html" id="lang-fra" class="btn btn-secondary">
-            <input href="index-fr.html" type="radio" name="options" id="option1" checked>
-          </a>
-          <a href="index.html" id="lang-esp" class="btn btn-secondary">
-            <input href="index.html" type="radio" name="options" id="option2">
-          </a>
-        </div>
       </nav>
-        <main class="bg">
+        <main class="bg" style="min-width: 333px;">
             <h1 class="headline">Yoga con Christine</h1>
         </main>
         
@@ -63,35 +65,39 @@
 
         <div id="content1">
             <img id="card-icon" src="./images/flower.svg" alt="">
-            <h1>Bienvenidos al estudio de yoga con Christine</h1>
+            <h1>Bienvenidos al estudio de Yoga con Christine</h1>
             <hr>
         </div>
 
         <div id="intro-cards">
           <a href="classes.html" id="card">
-              <img id="small-card-icon" src="./images/one.svg" alt="">
-              <hr>
+              <img id="small-card-icon" src="./images/onelegup.svg" alt="">
+              <hr style="height: 1px; border-top-width: 0px;">
               <p class="card-text" style="color: black;">
                 Descubre las clases
               </p>
             </a>
           <a href="offers.html" id="card">
             <img id="small-card-icon" src="./images/three.svg" alt="">
-            <hr>
+            <hr style="height: 1px;">
             <p class="card-text" style="color: black;">
-              Los programas completos que propongo para mejorar tu día a día.
+              Descubre los programas completos para mejorar tu día a día 
             </p>
           </a>
           <a href="info.html" id="card">
-            <img id="small-card-icon" src="./images/two.svg" alt="">
-            <hr>
-            <p class="card-text" style="color: black;">
-              ¿Quieres saber más? Conocerme o conocer mi visión del yoga?
-            </p>
+              <img id="small-card-icon" src="./images/one.svg" alt="">
+              <hr style="height: 1px;">
+              <p class="card-text" style="color: black;">
+                ¿Quieres saber más? Conocerme o conocer mi visión del yoga?
+              </p>
           </a>
       </div>
-        
-        <div id="carousel_info" class="carousel slide" data-ride="carousel">
+
+      <h4 id="welcome-message">
+        ¡Empecemos el paseo!
+      </h4>
+        <hr>
+        <div id="carousel_info" class="carousel slide" data-ride="carousel" style="min-width: 333px;">
 
           <!-- Indicators -->
           <ul class="carousel-indicators">
@@ -104,41 +110,28 @@
       
           <!-- The slideshow -->
           <div class="carousel-inner">
-            <a id="carousel_item_info" href="offers.html" class="carousel-item active">
-              <img src="images/free1.jpg" alt="Los Angeles">
+            <div id="carousel_item_info" class="carousel-item active">
+              <img src="images/caro_1.jpg" alt="Woman at beach">
               <div id="caro-text" class="carousel-caption">
                 <h4 id="colah">El yoga es un estilo de vida</h4>
                 <p id="colah">
-                  Guiarte hacia una vida armoniosa a través 
-                  de una práctica cuidadosa y segura es 
-                  mi principal objetivo.
+                  Guiarte hacia una vida armoniosa a través de 
+                  una práctica cuidadosa y segura es mi principal objetivo.
                 </p>
-                <div style="float: left; padding: 5px;">
-                  <button type="button" class="btn btn-primary">Aprende más</button>
-                </div>
               </div>
-            </a>
-            <a id="carousel_item_info" href="offers-fr.html" class="carousel-item">
-              <img src="images/free2.jpg" alt="Chicago">
+            </div>
+            <div id="carousel_item_info" class="carousel-item">
+              <img src="images/caro_2.jpg" alt="Meditation">
               <div id="caro-text" class="carousel-caption">
                 <h5 id="colah">El yoga es beneficioso para todos</h5>
-                <p id="colah">
+                <p id="colah"> 
                   No hay que tener un cuerpo perfecto, ni ser joven, 
-                  flexible o deportivo. Controlar la respiración ya 
-                  es hacer yoga.
+                  flexible o deportivo. Controlar la respiración ya es hacer yoga. 
                 </p>
-                <div style="float: left; padding: 5px;">
-                  <button type="button" class="btn btn-primary">Aprende más</button>
-                </div>
               </div>
-            </a>
-            
-- 
-- 
-- 
--  
-            <a id="carousel_item_info" href="info.html" class="carousel-item">
-              <img src="images/mountaintop.jpg" alt="New York">
+            </div>
+            <div id="carousel_item_info" class="carousel-item">
+              <img src="images/free2.jpg" alt="New York">
               <div id="caro-text" class="carousel-caption">
                 <h5 id="colah">El yoga nos ofrece:</h5>
                 <p id="colah">
@@ -149,50 +142,38 @@
                     <li id="colah">Ser, en lugar de hacer, y vivir plenamente el momento presente</li>
                   </ul>
                 </p>
-                <div style="float: left; padding: 5px;">
-                  <button type="button" class="btn btn-primary">Aprende más</button>
-                </div>
               </div>
-            </a>
-             
-
-
-
- 
-            <a id="carousel_item_info" href="offers-fr.html" class="carousel-item">
-              <img src="images/prayin.jpg" alt="Chicago">
+            </div>
+            <div id="carousel_item_info" class="carousel-item">
+              <img src="images/caro_4.jpg" alt="cooking couple">
               <div id="caro-text" class="carousel-caption">
-                <!-- <h5 id="colah">Group + Private Classes</h5> -->
                 <p id="colah">
-                  <ul id="colah">
-                    <li id="colah">
-                      ¿Tienes problemas para dormir?
-                    </li>
-                    <li id="colah">
-                      ¿Sufres de ansiedad o estrés?
-                    </li>
-                    <li id="colah">
-                      ¿Careces de vitalidad?
-                    </li>
-                    <li id="colah">
-                      ¿Tienes dolores de cabeza?
-                    </li>
-                  </ul>
+                  La práctica del yoga en la esterilla es un reflejo de nuestros comportamientos en la vida. Al adaptar tu práctica sobre la esterilla, podemos trasladar estos beneficios a nuestra vida cotidiana 
+                </p>
+              </div>
+            </div>
+            <a id="carousel_item_info" href="offers-fr.html" class="carousel-item">
+              <img src="images/sitting-carousel.jpg" alt="Chicago" style="width: auto; height: 100%; min-width: 1080px;">
+              <div id="caro-text" class="carousel-caption">
+                <ul id="colah">
+                  <li id="colah">
+                    ¿Tienes problemas para dormir?
+                  </li>
+                  <li id="colah">
+                    ¿Sufres de ansiedad o estrés?
+                  </li>
+                  <li id="colah">
+                    ¿Careces de vitalidad?
+                  </li>
+                  <li id="colah">
+                    ¿Tienes dolores de cabeza?
+                  </li>
+                </ul>
+                <p id="colah">
                   He desarrollado programas específicos para ti
                 </p>
                 <div style="float: left; padding: 5px;">
-                  <button type="button" class="btn btn-primary">Aprende más</button>
-                </div>
-              </div>
-            </a>
-            <a id="carousel_item_info" href="offers-fr.html" class="carousel-item">
-              <img src="images/posemountain.jpg" alt="Chicago">
-              <div id="caro-text" class="carousel-caption">
-                <p id="colah">
-                  La práctica del yoga en la esterilla es un reflejo de nuestros comportamientos en la vida. Al adaptar tu práctica sobre la esterilla, podemos trasladar estos beneficios a nuestra vida cotidiana.
-                </p>
-                <div style="float: left; padding: 5px;">
-                  <button type="button" class="btn btn-primary">Aprende más</button>
+                  <button type="button" class="btn btn-primary">En savoir plus</button>
                 </div>
               </div>
             </a>
@@ -213,6 +194,9 @@
           <hr id="hr-break">
         </div>
         <div id="content2">
+
+          <h2 id="testimonies">TESTIMONIOS</h2>
+          <hr>
           <div class="card-columns">
 
             <div id="testo-card" class="card p-3 text-center">
@@ -332,11 +316,10 @@
           <hr id="hr-break">
         </div>
 
-        <div id="wide-image">
+        <div id="wide-image" style="min-width: 333px;">
           <div id="caro-text-single">
-            <h5 id="colah">My vision</h5>
             <p id="colah">
-              Yoga is an art of daily living. I wish to offer the participants in my classes a harmonious life through a benevolent and safe practice of yoga adapted to the needs of each student.
+              
             </p>
           </div>
         </div>
@@ -346,139 +329,6 @@
           <img id="card-icon" src="./images/flower.svg" alt="">
           <hr id="hr-break">
         </div>
-
-        <!-- <div id="card-small">
-              <img class="profile-icon-symbol-1" src="./images/downdog.svg" alt="">
-            </div>
-            
-            <div class="profile-info-text-1">
-              <h1 style="text-align: center;">Sleep Better</h1>
-              <hr>
-              <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-            <div class="profile-info-text-2">
-              <h1 style="text-align: center;">Ease Anxiety</h1>
-              <hr>
-              <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-            <div id="card-small">
-              <img class="profile-icon-symbol-2" src="./images/peaceful.svg" alt="">
-            </div>
-            <div id="card-small">
-              <img class="profile-icon-symbol-3" src="./images/bigpose.svg" alt="">
-            </div>
-            
-            <div class="profile-info-text-3">
-              <h1 style="text-align: center;">Energy</h1>
-              <hr>
-              <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div> -->
-
-        <!-- <div id="content3">
-          <div class="accordion" id="accordion">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                  <div id="header" class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <img id="accordion-symbol" src="./images/people.svg" alt=""> Classes
-                  </div>
-                </h2>
-              </div>
-          
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                <div id="classes-info" class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <div id="header" class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <img id="accordion-symbol" src="./images/onelegup.svg" alt=""> Technique
-                  </div>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <div id="header" class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <img id="accordion-symbol" src="./images/book.svg" alt=""> Español / Francais / Deutsch / English
-                  </div>
-                </h2>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingFour">
-                <h2 class="mb-0">
-                  <div id="header" class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    <img id="accordion-symbol" src="./images/hands.svg" alt=""> Self-improvement
-                  </div>
-                </h2>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div id="intro-cards">
-            <div id="card">
-                <img id="small-card-icon" src="./images/one.svg" alt="">
-                <h2 style="font-weight: lighter;">Packages</h2>
-                <hr>
-                <p class="card-text">
-                  Yoga is an art of daily living. I wish to offer the participants in my classes a harmonious life through a benevolent and safe practice of yoga adapted to the needs of each student.
-                  <br>
-                  <br>
-                  You should neither have a perfect body, nor be young, flexible or athletic. Mastering your breathing is already doing yoga.
-
-                  There are a large number of different practices, each with its own specificities, objectives and benefits. The trick is to identify the yoga that suits you best. The benefits of yoga are numerous and more and more scientific studies prove it.
-
-
-                </p>
-            </div>
-            <div id="card">
-                <img id="small-card-icon" src="./images/two.svg" alt="">
-                <h2 style="font-weight: lighter;">Classes</h2>
-                <hr>
-                <p class="card-text">
-                  I mainly teach Hatha Yoga with the fundamental basis of body alignment and the safe and benevolent execution of postures.
-                  <br><br>
-                  To enrich my classes or for specific needs I also use other types of yoga, such as Restorative Yoga (a yoga using many accessories for more comfort in the postures), Yin Yoga (prolonged duration of the postures for a deep stretch of the muscles) or Kundalini Yoga (for work on the vital energy of the body).
-
-                </p>
-            </div>
-            <div id="card">
-                <img id="small-card-icon" src="./images/three.svg" alt="">
-                <h2 style="font-weight: lighter;">About Me</h2>
-                <hr>
-                <p class="card-text">
-                  I offer group and private lessons in Spanish and French. 
-                </p>
-            </div>
-        </div> -->
-
 
         <div id="side2"></div>
         <div id="side3"></div>

@@ -748,6 +748,22 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
     margin-left: 50px;
 }
 
+.program-points {
+    margin-left: 15px;
+}
+
+#contact_button{
+    text-align: center;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    color: #c981c9;
+    /* background-color: aquamarine; */
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+
 #price {
     text-align: center;
     margin-left: auto;
@@ -825,18 +841,17 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 
 .carousel-item img {
     position: absolute;
-    top:-100%; 
-    left:0; 
-    right: 0;
-    bottom:-100%;
+    /* top: 50%;
+    left: 50%; */
     margin: auto;
     filter: contrast(60%);
+    display: block;
 }
 
 #wide-image {
     height: 70vh;
     grid-area: wide-image;
-    background-image: url("yogapeople.jpg");
+    background-image: url("offers_banner.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -901,7 +916,7 @@ main {
 }
 
 .bg-offer {
-    background-image: url("offers_banner.jpg");
+    background-image: url("IMG_1144.JPG");
 }
 
 .headline {
@@ -1170,4 +1185,9 @@ footer{
     background: #AC66AC;
     grid-area: footer;
     min-height: 10vh;
+}
+
+#testo {
+    color: #007bff !important;
+    text-decoration: underline;
 }

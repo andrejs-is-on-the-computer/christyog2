@@ -13,6 +13,53 @@
     <title>Yoga Christine</title>
 </head>
 <body>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form name="enquiry-form" method="post" netlify>
+          <div class="modal-body">
+          
+              <div class="form-group">
+                <label for="name" class="col-form-label">Nom:</label>
+                <input type="text" class="form-control" id="name" name="name">
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-form-label">E-mail:</label>
+                <input type="text" class="form-control" id="email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="phone" class="col-form-label">Téléphone:</label>
+                <input type="text" class="form-control" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text" name="message-text"></textarea>
+              </div>
+          
+          </div>
+          <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="contact_button" class="bi bi-question-circle-fill"
+                style="cursor: pointer;"
+                data-toggle="modal" data-target="#exampleModal" 
+                data-whatever="Je veux en savoir plus" 
+                data-text="Je veux en savoir plus. ">
+    </h1>
+
+
     <div class="main-layout">
       <nav id="navbar" class="navbar navbar-expand-md navbar-light md-light">
         <button id="navcollapse" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -136,7 +183,7 @@
               <div id="caro-text" class="carousel-caption">
                 <h5 id="colah">Le yoga:</h5>
                 <p id="colah">
-                  <ul id="colah">
+                  <ul class="program-points" id="colah">
                     <li id="colah">Renforce notre force physique pour nous sentir stable et équilibré </li>
                     <li id="colah">Renforce notre flexibilité pour développer une attitude positive et ouverte face aux événements de la vie  </li>
                     <li id="colah">Nous connecte à notre respiration, porte d´entrée à notre système nerveux</li>
@@ -156,7 +203,7 @@
             <a id="carousel_item_info" href="offers-fr.html" class="carousel-item">
               <img src="images/sitting-carousel.jpg" alt="Chicago" style="width: auto; height: 100%; min-width: 1080px;">
               <div id="caro-text" class="carousel-caption">
-                <ul id="colah">
+                <ul class="program-points" id="colah">
                   <li id="colah">
                     Avez-vous des insomnies? 
                   </li>
@@ -342,5 +389,13 @@
 </html>
 
 <script>
-
+  $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget)
+    var recipient = button.data('whatever')
+    var content = button.data('text')
+    var modal = $(this)
+    // modal.find('.modal-title').text(recipient)
+    modal.find('.modal-title').text(recipient)
+    modal.find('.modal-body textarea').val(content)
+  })
 </script>

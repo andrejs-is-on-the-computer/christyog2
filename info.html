@@ -14,6 +14,50 @@
 </head>
 <body>
 
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form name="enquiry-form" method="post" netlify>
+          <div class="modal-body">
+              <div class="form-group">
+                <label for="name" class="col-form-label">Nombre:</label>
+                <input type="text" class="form-control" id="name" name="name">
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-form-label">Correo Electrónico:</label>
+                <input type="text" class="form-control" id="email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="phone" class="col-form-label">Teléfono:</label>
+                <input type="text" class="form-control" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Mensaje:</label>
+                <textarea class="form-control" id="message-text" name="message-text"></textarea>
+              </div>
+          
+          </div>
+          <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="contact_button" class="bi bi-question-circle-fill"
+                style="cursor: pointer;"
+                data-toggle="modal" data-target="#exampleModal" 
+                data-whatever="Quiero saber más" 
+                data-text="Quiero saber más. ">
+    </h1>
+
   <div class="info-layout">
 
     <nav id="navbar" class="navbar navbar-expand-md navbar-light md-light">
@@ -66,7 +110,7 @@
     
     <div id="intro-head">
       <h2>
-        Sobre
+        Mi visión
       </h2>
     </div>
 
@@ -74,10 +118,6 @@
       <div>
         <img id="card-icon" src="./images/flower.svg" alt="">
       </div>
-
-      <h3 style="text-align: center;">
-        Mi visión
-      </h3>
 
       <hr>
       El yoga es un estilo de vida. Deseo ofrecer a 
@@ -118,7 +158,7 @@
 
     <div id="intro-head-2">
       <h2>
-        Avantages
+        Beneficios del yoga
       </h2>
     </div>
 
@@ -196,7 +236,7 @@
         <hr style="margin-top: 1px; margin-bottom: 10px;">
         <b>El yoga permite:</b>
         <br><br>
-        <ul>
+        <ul class="program-points">
           <li>
             Fortalecer tu fuerza física para sentirte estable y equilibrada/o
           </li>
@@ -278,7 +318,7 @@
           Mis diplomas:
         </b>
         <br><br>
-        <ul>
+        <ul class="program-points">
           <li>
             Formation professorale Méthode Diva Yoga de l'Université internationale de Yoga  – 20 junio 2019
           </li>
@@ -292,6 +332,8 @@
             Anatomía aplicada al yoga de Julia Zatta – diciembre 2020
           </li>
         </ul>
+        <hr>
+        <a id="testo" href="index.html#content2">Ver testimonios</a>
         <hr>
         <b>
           Contacto
@@ -315,3 +357,15 @@
 
 </body>
 </html>
+
+<script>
+  $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget)
+    var recipient = button.data('whatever')
+    var content = button.data('text')
+    var modal = $(this)
+    // modal.find('.modal-title').text(recipient)
+    modal.find('.modal-title').text(recipient)
+    modal.find('.modal-body textarea').val(content)
+  })
+</script>

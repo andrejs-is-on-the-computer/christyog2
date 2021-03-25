@@ -25,32 +25,43 @@
         </div>
         <form name="enquiry-form" method="post" netlify>
           <div class="modal-body">
-          
               <div class="form-group">
-                <label for="name" class="col-form-label">Nom:</label>
+                <label for="name" class="col-form-label">Nombre:</label>
                 <input type="text" class="form-control" id="name" name="name">
               </div>
               <div class="form-group">
-                <label for="email" class="col-form-label">E-mail:</label>
+                <label for="email" class="col-form-label">Correo Electrónico:</label>
                 <input type="text" class="form-control" id="email" name="email">
               </div>
               <div class="form-group">
-                <label for="phone" class="col-form-label">Téléphone:</label>
+                <label for="phone" class="col-form-label">Teléfono:</label>
                 <input type="text" class="form-control" id="phone" name="phone">
               </div>
               <div class="form-group">
-                <label for="message-text" class="col-form-label">Message:</label>
+                <label for="message-text" class="col-form-label">Mensaje:</label>
                 <textarea class="form-control" id="message-text" name="message-text"></textarea>
               </div>
           
           </div>
           <div class="modal-footer">
-          <button type="submit" class="btn btn-primary">Envoyer</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
           </div>
         </form>
         </div>
       </div>
     </div>
+
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                data-whatever="Cours virtuels en direct" 
+                data-text="J'aimerais en savoir plus sur le forfait 'Cours virtuels en direct'"
+                style="width:100%;">INFORMACIÓN</button> -->
+
+    <h1 id="contact_button" class="bi bi-question-circle-fill"
+                style="cursor: pointer;"
+                data-toggle="modal" data-target="#exampleModal" 
+                data-whatever="Quiero saber más" 
+                data-text="Quiero saber más. ">
+    </h1>
 
     <div class="class-layout">
 
@@ -108,7 +119,7 @@
           <hr>
           <p>
             Las clases de yoga incluyen introducción al tema, 
-            centramiento, calentamiento, posturas (asanas), 
+            concentrate, calentamiento, posturas (asanas), 
             relajación con meditación (mantras) y ejercicios 
             de respiración (pranayama). Al final de las 
             clases grupales, concedemos 5 minutos para una 
@@ -154,14 +165,14 @@
             <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
               <div style="width: 50%; float: left; padding: 5px;">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
-                data-whatever="Cours virtuels en direct" 
-                data-text='Je souhaite réserver le forfait "Cours virtuels en direct"'
+                data-whatever="Clases virtuales en directo" 
+                data-text='Quiero reservar el paquete "Clases virtuales en directo"'
                 style="width:100%;">RESERVA</button>
               </div>
               <div style="width:50%; float: left; padding: 5px;">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
-                data-whatever="Cours virtuels en direct" 
-                data-text="J'aimerais en savoir plus sur le forfait 'Cours virtuels en direct'"
+                data-whatever="Clases virtuales en directo" 
+                data-text="Me gustaría saber más sobre el paquete 'Clases virtuales en directo'"
                 style="width:100%;">INFORMACIÓN</button>
               </div>
             </div>
@@ -172,7 +183,7 @@
             <br><br>
             <b>Horario de las clases (todos los niveles):</b>
             <br><br>
-            <ul>
+            <ul class="program-points">
               <li>
                 Martes 9:00-10:30 y 19:30-21:00
               </li>
@@ -195,14 +206,14 @@
             <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
               <div style="width: 50%; float: left; padding: 5px;">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
-                data-whatever="Cours présentiels" 
-                data-text='Je souhaite réserver le forfait "Cours présentiels"'
+                data-whatever="Clases presenciales" 
+                data-text='Quiero reservar el paquete "Clases presenciales"'
                 style="width:100%;">RESERVA</button>
               </div>
               <div style="width:50%; float: left; padding: 5px;">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
-                data-whatever="Cours présentiels" 
-                data-text="J'aimerais en savoir plus sur le forfait 'Cours présentiels'"
+                data-whatever="Clases presenciales" 
+                data-text="Me gustaría saber más sobre el paquete 'Clases presenciales'"
                 style="width:100%;">INFORMACIÓN</button>
               </div>
             </div>
@@ -216,7 +227,7 @@
           <div id="private-info">
             <b>¿Tienes alguna pregunta, algún deseo, algún capricho, alguna necesidad especial?</b>
             <br><br>
-            <ul>
+            <ul class="program-points">
               <li>
                 No me siento cómodo en una clase grupal
               </li>
@@ -243,7 +254,7 @@
             <hr>
             <b>Te propongo tres opciones:</b>
             <br><br>
-            <ul>
+            <ul class="program-points">
               <li>
                 Clases privadas de 60 minutos en mi 
                 domicilio (Alquería del Fargue). 
@@ -265,13 +276,13 @@
               <div style="width: 50%; float: left; padding: 5px;">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
                 data-whatever="Cours Privés" 
-                data-text='Je souhaite réserver le forfait "Cours Privés"'
+                data-text='Quiero reservar el paquete "Clases Particulares"'
                 style="width:100%;">RESERVA</button>
               </div>
               <div style="width:50%; float: left; padding: 5px;">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
                 data-whatever="Cours Privés" 
-                data-text="J'aimerais en savoir plus sur le forfait 'Cours Privés'"
+                data-text="Me gustaría saber más sobre el paquete 'Clases Particulares'"
                 style="width:100%;">INFORMACIÓN</button>
               </div>
             </div>

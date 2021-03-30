@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/flower.svg" type="image/x-icon" />
+    <title>Yoga Christine</title>
+</head>
+<body>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form name="enquiry-form" method="post" netlify>
+          <div class="modal-body">
+              <div class="form-group">
+                <label for="name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="name" name="name">
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="text" class="form-control" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text" name="message-text"></textarea>
+              </div>
+          
+          </div>
+          <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="contact_button" class="bi bi-question-circle-fill"
+                style="cursor: pointer;"
+                data-toggle="modal" data-target="#exampleModal" 
+                data-whatever="Learn more" 
+                data-text="I would like to know more. ">
+    </h1>
+
+    <div class="offer-layout">
+      <nav id="navbar" class="navbar navbar-expand-md navbar-light md-light">
+        <button id="navcollapse" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bi bi-list"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav" style="text-align: center; margin-left: auto; margin-right: auto;">
+            <li class="nav-item colah-nav">
+              <a class="nav-link" href="index-en.html">
+                <span class="bi bi-house-door-fill"></span>
+                <p id="small-nav-text">HOME</p> 
+              </a>
+            </li>
+            <li class="nav-item colah-nav nav-active">
+              <a class="nav-link active" href="offers-en.html">
+                <span class="bi bi-box-seam"></span>
+                <p id="small-nav-text">PROGRAMS</p>
+              </a>
+            </li>
+            <li class="nav-item colah-nav">
+              <a class="nav-link" href="classes-en.html">
+                <span class="bi bi-book-half"></span>
+                <p id="small-nav-text">CLASSES</p>
+              </a>
+            </li>
+            <li class="nav-item colah-nav">
+              <a class="nav-link" href="info-en.html">
+              <span class="bi bi-info-circle-fill"></span>
+              <p id="small-nav-text">ABOUT</p>
+            </a>
+            </li>
+            <li class="nav-item colah-nav">
+              <div id="nav-lang" class="btn-group btn-group-toggle" data-toggle="buttons">
+                <a href="offers-fr.html" class="btn btn-secondary">
+                  FR
+                </label>
+                <a href="offers.html" class="btn btn-secondary">
+                  ES
+                </a>
+                <a href="offers-en.html" class="btn btn-secondary active ">
+                  EN
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+        <main class="bg-offer">
+            <h1 class="headline">Yoga with Christine</h1>
+        </main>
+        
+        <div id="side1"></div>
+
+        <div id="content1">
+          <img id="card-icon" src="./images/flower.svg" alt="">
+          <h1>Programs</h1>
+          <hr>
+          <p>
+            In order to be able to respond more individually to your specific needs, I have developed specific programs for specific problems. These different programs include private classes specifically designed for you, depending on your physical (degree of flexibility, eventual joint pain) and emotional fitness, after an individual interview. 
+          </p>
+        </div>
+        
+        <div class="offer-content">
+            <div id="offerbanner1">
+                <h2>Conquer my insomnia</h2>
+            </div>
+            <div id="offertext1">
+              Like many people, you have insomnia problems and you would like to get out of that hellish cycle of sleepless nights. The "Beat Insomnia" program is the solution for you.
+                <br><br>
+
+                <b id="program-info">The program includes:</b>
+                <ul id="program-points">
+                    <li>A 30 minute private interview to get to know you and assess your needs</li>
+                    <li>4 private classes of 60 minutes by Zoom</li>
+                    <li>4 videos recorded of 20-30 minutes with exercises to do at home</li>
+                </ul>
+                The aim is that after this month practicing yoga together you will have a toolkit to recover a deep and restful sleep.
+                <br><br>
+                <b id="program-info">Classes include:</b>
+                <ul id="program-points">
+                    <li>Soft poses that promote sleep</li>
+                    <li>Breathing exercises</li>
+                    <li>Mudras (hand gestures)</li>
+                    <li>Self-massages</li>
+                    <li>Meditations</li>
+                </ul>
+                The interval between two classes is at least a week to perfect the practice.
+                <br>
+                The rhythm of sleep does not change overnight. Changing bad habits takes time and discipline to do the exercises on a daily basis. A daily practice of 30 minutes is the guarantee of success.  
+                <br><br>
+                Having previous yoga experience is an advantage, but not a necessity.  
+                <hr>
+                <p id="price">
+                    <b>Price of the program: € 129</b>
+                    <br>
+                    You can pay by Bizum, Paypal or bank transfer.
+                </p>
+                <br>
+
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button> -->
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button> -->
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
+
+                <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
+                    <div style="width: 50%; float: left; padding: 5px;">
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                      data-whatever="Conquer my insomnia" 
+                      data-text='I would like to book the "Conquer my insomnia" program'
+                      style="width:100%;">RESERVE</button>
+                    </div>
+                    <div style="width:50%; float: left; padding: 5px;">
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                      data-whatever="Conquer my insomnia" 
+                      data-text="I would like to learn more about the 'Conquer my insomnia' program"
+                      style="width:100%;">ENQUIRE</button>
+                    </div>
+                </div>
+
+            </div>
+            <div id="offerimage1"></div>
+
+            <div id="offerbanner2">
+                <h2>Overcome my anxiety</h2>
+            </div>
+            <div id="offerimage2"></div>
+            <div id="offertext2">
+              Like many people, you have anxiety or stress problems and would like to improve your daily well-being . The "Overcome My Anxiety" program is the solution for you.
+                <br><br>
+                <b id="program-info">The program includes:</b>
+                <ul id="program-points">
+                    <li>A 30 minute private interview to get to know you and assess your needs</li>
+                    <li>4 private classes of 60 minutes by Zoom</li>
+                    <li>4 recorded videos of 20-30 minutes with exercises to do at home</li>
+                </ul>
+
+                The objective is that at the end of this month practicing yoga together you will have a tool kit that allows you to observe your mood changes and consciously adapt your behavior as these changes occur.
+                <br><br>
+                <b id="program-info">Classes include:</b>
+                <ul id="program-points">
+                    <li>Gentle poses that promote relaxation</li>
+                    <li>Breathing exercises (breathing is the gateway to our nervous system)</li>
+                    <li>Mudras (hand gestures)</li>
+                    <li>Self-massages</li>
+                    <li>Meditations</li>
+
+                </ul>
+                The interval between two classes is at least a week to perfect the practice.
+                <br>
+                You can't beat your anxiety overnight. Changing your mood takes time and discipline to do the exercises on a daily basis. A daily practice of 30 minutes is the guarantee of success.  
+                <br><br>
+                Having previous yoga experience is an advantage, but not a necessity.
+                <hr>
+                <p id="price">
+                    <b>Price of the program: € 129</b> 
+                      <br>
+                      You can pay by Bizum, Paypal or bank transfer.
+                </p>
+                <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
+                  <div style="width: 50%; float: left; padding: 5px;">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                    data-whatever="Overcome my anxiety" 
+                    data-text='I would like to book a "Overcome my anxiety" program'
+                    style="width:100%;">RESERVE</button>
+                  </div>
+                  <div style="width:50%; float: left; padding: 5px;">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                    data-whatever="Overcome my anxiety" 
+                    data-text="I would like to learn more about the 'Overcome my anxiety' program"
+                    style="width:100%;">ENQUIRE</button>
+                  </div>
+              </div>
+
+            </div>
+
+            <div id="offerbanner3">
+                <h2>Increase my vitality</h2>
+            </div>
+            <div id="offertext3">
+              Do you often feel tired and without energy? The "Increase My Vitality" program is the solution for you.
+                <br><br>
+                <b id="program-info">The program includes:</b>
+                <ul id="program-points">
+                    <li>A 30 minute private interview to get to know you and assess your needs</li>
+                    <li>4 private classes of 60 minutes by Zoom</li>
+                    <li>4 recorded videos of 20-30 minutes with exercises to do at home</li>
+                </ul>
+                The objective is that at the end of this month practicing yoga together you will regain your vitality and the strength and energy to carry out your projects.
+                <br><br>
+                <b id="program-info">Classes include:</b>
+                <ul id="program-points">
+                    <li>Poses to increase your vitality</li>
+                    <li>Breathing exercises to optimize your breathing capacity</li>
+                    <li>Mudras (hand gestures)</li>
+                    <li>Self-massages</li>
+                    <li>Meditations</li>
+                </ul>
+                
+                The interval between two classes is at least a week to perfect the practice.
+                <br>
+                A daily practice of 30 minutes is the guarantee of success.
+                <br><br>
+                Having previous yoga experience is an advantage, but not a necessity.
+                <hr>
+                <p id="price">
+                    <b>Price of the program: € 129</b>
+                    <br>
+                    You can pay by Bizum, Paypal or bank transfer.
+                </p>
+
+                <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
+                  <div style="width: 50%; float: left; padding: 5px;">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                    data-whatever="Increase my vitality" 
+                    data-text='I would like to book a "Increase my vitality" program'
+                    style="width:100%;">RESERVE</button>
+                  </div>
+                  <div style="width:50%; float: left; padding: 5px;">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                    data-whatever="Increase my vitality" 
+                    data-text="I would like to learn more about the 'Increase my vitality' program"
+                    style="width:100%;">ENQUIRE</button>
+                  </div>
+                </div>
+
+            </div>
+            <div id="offerimage3"></div>
+
+            <div id="offerbanner4">
+                <h2>Relieve my headaches</h2>
+            </div>
+            <div id="offerimage4"></div>
+            <div id="offertext4">
+              Do headaches or migraines ruin your life? The "Relieve My Headaches" program is the solution for you.
+                <br><br>
+                <b id="program-info">The program includes:</b>
+                <ul id="program-points">
+                    <li>A 30 minute private interview to get to know you and assess your needs</li>
+                    <li>4 private classes of 60 minutes by Zoom</li>
+                    <li>4 recorded videos of 20-30 minutes with exercises to do at home</li>
+                </ul>
+                <br>
+                The aim is that after this month practicing yoga together you will have a toolkit that allows you to observe the appearance of crises and act preventively.
+                <br><br>
+                <b id="program-info">Classes include:</b>
+                <ul id="program-points">
+                    <li>Energetic cleansing poses for the body and mind</li>
+                    <li>Breathing exercises</li>
+                    <li>Mudras (hand gestures)</li>
+                    <li>Self-massages</li>
+                    <li>Meditations</li>
+                </ul>
+
+                The interval between two classes is at least a week to perfect the practice.
+                <br>
+                A daily practice of 30 minutes is the guarantee of success.
+                <br><br>
+                Having previous yoga experience is an advantage, but not a necessity.
+
+                <hr>
+                <p id="price">
+                    <b>Price of the program: € 129</b>
+                    <br>
+                    You can pay by Bizum, Paypal or bank transfer.
+                </p>
+                
+                <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
+                  <div style="width: 50%; float: left; padding: 5px;">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                    data-whatever="Relieve my headaches" 
+                    data-text='I would like to book a "Relieve my headaches" program'
+                    style="width:100%;">RESERVE</button>
+                  </div>
+                  <div style="width:50%; float: left; padding: 5px;">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                    data-whatever="Relieve my headaches" 
+                    data-text="I would like to learn more about the 'Relieve my headaches' program"
+                    style="width:100%;">ENQUIRE</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div id="side2"></div>
+        <footer></footer>
+    </div>
+</body>
+</html>
+
+<script>
+  $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget)
+    var recipient = button.data('whatever')
+    var content = button.data('text')
+    var modal = $(this)
+    // modal.find('.modal-title').text(recipient)
+    modal.find('.modal-title').text(recipient)
+    modal.find('.modal-body textarea').val(content)
+  })
+</script>

@@ -232,7 +232,7 @@ h2 {
 }
 
 #private-photo {
-    background-image: url(priv_class_cl-min.JPG);
+    background-image: url(IMG_1174.JPG);
 }
 
 
@@ -835,17 +835,20 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 }
 
 #carousel_item_info {
-    position: relative;
+    /* position: relative; */
     height:90vh;
 }
 
 .carousel-item img {
-    position: absolute;
+    width:100%;
+    height:100%;
+    /* position: absolute; */
     /* top: 50%;
     left: 50%; */
     margin: auto;
     filter: contrast(60%);
-    display: block;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 #wide-image {
@@ -908,7 +911,7 @@ main {
   }
 
 .bg-info {
-    background-image: url("info-head.jpg");
+    background-image: url("chris_al_portrait.jpg");
 }
 
 .bg-class {
@@ -916,7 +919,7 @@ main {
 }
 
 .bg-offer {
-    background-image: url("IMG_1144.JPG");
+    background-image: url("IMG_1163.JPG");
 }
 
 .headline {

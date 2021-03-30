@@ -859,6 +859,7 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    background-attachment: scroll;
     position: relative;
 }
 

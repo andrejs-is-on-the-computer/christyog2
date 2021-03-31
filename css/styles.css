@@ -223,7 +223,7 @@ h2 {
 #group-photo, #private-photo {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
+    background-position: center;
     min-height: 350px;
 }
 
@@ -516,9 +516,7 @@ h2 {
     ;
 }
 
-#offerimage1, #offerimage2, #offerimage3, #offerimage4 {
-    height: 100%;
-}
+
 
 .colah-nav {
     color: #ffffff !important;
@@ -696,6 +694,7 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 
     #offerimage1, #offerimage2, #offerimage3, #offerimage4 {
         height: 50vh;
+        /* height: 100%; */
         }
 
     #classes-image-1, #classes-image-2 {

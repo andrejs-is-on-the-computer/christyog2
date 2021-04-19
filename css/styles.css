@@ -845,7 +845,7 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
     /* top: 50%;
     left: 50%; */
     margin: auto;
-    filter: contrast(60%);
+    /* filter: contrast(60%); */
     object-fit: cover;
     overflow: hidden;
 }

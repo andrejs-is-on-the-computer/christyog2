@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/flower.svg" type="image/x-icon" />
+    <title>Yoga Christine</title>
+</head>
+<body>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form name="enquiry-form" method="post" netlify>
+          <div class="modal-body">
+              <div class="form-group">
+                <label for="name" class="col-form-label">Nombre:</label>
+                <input type="text" class="form-control" id="name" name="name">
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-form-label">Correo Electrónico:</label>
+                <input type="text" class="form-control" id="email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="phone" class="col-form-label">Teléfono:</label>
+                <input type="text" class="form-control" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Mensaje:</label>
+                <textarea class="form-control" id="message-text" name="message-text"></textarea>
+              </div>
+
+          </div>
+          <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="contact_button" class="bi bi-question-circle-fill"
+                style="cursor: pointer;"
+                data-toggle="modal" data-target="#exampleModal"
+                data-whatever="Quiero saber más"
+                data-text="Quiero saber más. ">
+    </h1>
+
+    <div class="offer-layout">
+      <nav id="navbar" class="navbar navbar-expand-md navbar-light md-light">
+        <button id="navcollapse" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bi bi-list"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav" style="text-align: center; margin-left: auto; margin-right: auto;">
+            <li class="nav-item colah-nav">
+              <a class="nav-link" href="index-en.html">
+                <span class="bi bi-house-door-fill"></span>
+                <p id="small-nav-text">HOME</p>
+              </a>
+            </li>
+            <li class="nav-item colah-nav nav-active">
+              <a class="nav-link active" href="retreat-en.html">
+                <span class="bi bi-sun"></span>
+                <p id="small-nav-text">GETAWAY</p>
+              </a>
+            </li>
+            <li class="nav-item colah-nav">
+              <a class="nav-link" href="offers-en.html">
+                <span class="bi bi-box-seam"></span>
+                <p id="small-nav-text">PROGRAMS</p>
+              </a>
+            </li>
+            <li class="nav-item colah-nav">
+              <a class="nav-link" href="classes-en.html">
+                <span class="bi bi-book-half"></span>
+                <p id="small-nav-text">CLASSES</p>
+              </a>
+            </li>
+            <li class="nav-item colah-nav">
+              <a class="nav-link" href="info-en.html">
+              <span class="bi bi-info-circle-fill"></span>
+              <p id="small-nav-text">ABOUT</p>
+            </a>
+            </li>
+            <li class="nav-item colah-nav">
+              <div id="nav-lang" class="btn-group btn-group-toggle" data-toggle="buttons">
+                <a href="retreat-fr.html" class="btn btn-secondary">
+                  FR
+                </a>
+                <label class="btn btn-secondary active">
+                  EN
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+        <main class="bg-offer">
+            <h1 class="headline">Yoga con Christine</h1>
+        </main>
+
+        <div id="side1"></div>
+
+        <div id="content1">
+          <img id="card-icon" src="./images/flower.svg" alt="">
+          <h1>Programas</h1>
+          <hr>
+          <p>
+            Para poder responder de manera más individual a
+            tus necesidades específicas, he elaborado unos
+            programas específicos para problemas concretos.
+            Estos diferentes programas incluyen clases
+            particulares diseñadas específicamente para
+            tí, en función de tu aptitud física (grado de
+            flexibilidad, dolores articulares eventuales)
+            y emocional, después de una entrevista individual.
+          </p>
+        </div>
+
+        <div class="offer-content">
+            <div id="offerbanner1">
+                <h2>Vencer mi insomnio</h2>
+            </div>
+            <div id="offertext1">
+              Como muchas personas, tienes problemas de
+              insomnio y te gustaría salir de ese círculo
+              infernal de noches sin dormir. El programa
+              "Vencer el insomnio" es la solución para ti.
+                <br><br>
+
+                <b id="program-info">El programa comprende:</b>
+                <ul id="program-points">
+                    <li>Una entrevista privada de 30 minutos para conocerte y evaluar tus necesidades</li>
+                    <li>4 clases privadas de 60 minutos por Zoom</li>
+                    <li>4 vídeos grabados de 20-30 minutos con ejercicios para hacer en casa</li>
+                </ul>
+                El objetivo es que al cabo de este mes
+                practicando yoga juntos dispongas de
+                un kit de herramientas para recuperar
+                un sueño profundo y reparador.
+                <br><br>
+                <b id="program-info">Las clases incluyen:</b>
+                <ul id="program-points">
+                    <li>Posturas suaves que favorecen el sueño</li>
+                    <li>Ejercicios de respiración</li>
+                    <li>Mudras (gestos de la mano)</li>
+                    <li>Auto-masajes</li>
+                    <li>Meditaciones</li>
+                </ul>
+                El intervalo entre dos clases es de al menos
+                una semana para perfeccionar la práctica.
+                <br>
+                El ritmo del sueño no cambia de la noche a
+                la mañana. Cambiar los malos hábitos requiere
+                tiempo y disciplina para hacer los ejercicios
+                diariamente. Una práctica diaria de 30 minutos
+                es la garantía de éxito.
+                <br><br>
+                Tener experiencia previa en yoga es una ventaja, pero no una necesidad.
+                <hr>
+                <p id="price">
+                    <b>Precio del programa: 129 €</b>
+                    <br>
+                    Puedes pagar por Bizum, Paypal o transferencia bancaria.
+                </p>
+                <br>
+
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button> -->
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button> -->
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
+
+                <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
+                    <div style="width: 50%; float: left; padding: 5px;">
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                      data-whatever="Vencer mi insomnio"
+                      data-text='Quiero reservar el paquete "Vencer mi insomnio"'
+                      style="width:100%;">RESERVA</button>
+                    </div>
+                    <div style="width:50%; float: left; padding: 5px;">
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                      data-whatever="Vencer mi insomnio"
+                      data-text="Me gustaría saber más sobre el paquete 'Vencer mi insomnio'"
+                      style="width:100%;">INFORMACIÓN</button>
+                    </div>
+                </div>
+
+            </div>
+            <div id="offerimage1"></div>
+
+            <div id="offerbanner2">
+                <h2>Vencer mi ansiedad</h2>
+            </div>
+            <div id="offerimage2"></div>
+            <div id="offertext2">
+              Como muchas personas, tienes problemas de ansiedad o
+              estrés y te gustaría mejorar tu bienestar cotidiano.
+              El programa "Vencer mi ansiedad" es la solución para ti.
+                <br><br>
+                <b id="program-info">El programa comprende:</b>
+                <ul id="program-points">
+                    <li>Una entrevista privada de 30 minutos para conocerte y evaluar tus necesidades</li>
+                    <li>4 clases privadas de 60 minutos por Zoom</li>
+                    <li>4 vídeos grabados de 20-30 minutos con ejercicios para hacer en casa</li>
+                </ul>
+
+                El objetivo es que al cabo de este mes practicando
+                yoga juntos dispongas de un kit de herramientas
+                que te permita observar tus cambios anímicos y
+                adaptar tu comportamiento de manera consciente
+                según se produzcan estos cambios.
+                <br><br>
+                <b id="program-info">Las clases incluyen:</b>
+                <ul id="program-points">
+                    <li>Posturas suaves que favorecen la relajación</li>
+                    <li>Ejercicios de respiración (la respiración es la puerta de entrada a nuestro sistema nervioso)</li>
+                    <li>Mudras (gestos de la mano)</li>
+                    <li>Auto-masajes</li>
+                    <li>Meditaciones</li>
+
+                </ul>
+                El intervalo entre dos clases es de al menos una
+                semana para perfeccionar la práctica.
+                <br>
+                No puedes vencer tu ansiedad de la noche a la
+                mañana. Cambiar tu estado de ánimo requiere
+                tiempo y disciplina para hacer los ejercicios
+                diariamente. Una práctica diaria de 30 minutos
+                es la garantía de éxito.
+                <br><br>
+                Tener experiencia previa en yoga es una ventaja, pero no una necesidad.
+                <hr>
+                <p id="price">
+                    <b>Precio del programa: 129 €</b>
+                      <br>
+                      Puedes pagar por Bizum, Paypal o transferencia bancaria.
+                </p>
+                <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
+                  <div style="width: 50%; float: left; padding: 5px;">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="Vencer mi ansiedad"
+                    data-text='Quiero reservar el paquete "Vencer mi ansiedad"'
+                    style="width:100%;">RESERVA</button>
+                  </div>
+                  <div style="width:50%; float: left; padding: 5px;">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="Vencer mi ansiedad"
+                    data-text="Me gustaría saber más sobre el paquete 'Vencer mi ansiedad'"
+                    style="width:100%;">INFORMACIÓN</button>
+                  </div>
+              </div>
+
+            </div>
+
+            <div id="offerbanner3">
+                <h2>Aumentar mi vitalidad</h2>
+            </div>
+            <div id="offertext3">
+              ¿A menudo te sientes cansada/o y sin energía?
+              El programa "Aumentar mi vitalidad" es la
+              solución para ti.
+                <br><br>
+                <b id="program-info">El programa comprende:</b>
+                <ul id="program-points">
+                    <li>Una entrevista privada de 30 minutos para conocerte y evaluar tus necesidades</li>
+                    <li>4 clases privadas de 60 minutos por Zoom</li>
+                    <li>4 vídeos grabados de 20-30 minutos con ejercicios para hacer en casa</li>
+                </ul>
+                El objetivo es que al cabo de este mes practicando yoga juntos
+                recuperes tu vitalidad y la fuerza y energía para llevar a cabo tus proyectos.
+                <br><br>
+                <b id="program-info">Las clases incluyen:</b>
+                <ul id="program-points">
+                    <li>Posturas para aumentar tu vitalidad</li>
+                    <li>Ejercicios de respiración para optimizar tu capacidad respiratoria</li>
+                    <li>Mudras (gestos de la mano)</li>
+                    <li>Auto-masajes</li>
+                    <li>Meditaciones</li>
+                </ul>
+
+                El intervalo entre dos clases es de al menos una
+                semana para perfeccionar la práctica.
+                <br>
+                Una práctica diaria de 30 minutos es la garantía de éxito.
+                <br><br>
+                Tener experiencia previa en yoga es una ventaja, pero no una necesidad.
+                <hr>
+                <p id="price">
+                    <b>Precio del programa: 129 €</b>
+                    <br>
+                    Puedes pagar por Bizum, Paypal o transferencia bancaria.
+
+                </p>
+
+                <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
+                  <div style="width: 50%; float: left; padding: 5px;">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="Aumentar mi vitalidad"
+                    data-text='Quiero reservar el paquete "Aumentar mi vitalidad"'
+                    style="width:100%;">RESERVA</button>
+                  </div>
+                  <div style="width:50%; float: left; padding: 5px;">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="Aumentar mi vitalidad"
+                    data-text="Me gustaría saber más sobre el paquete 'Aumentar mi vitalidad'"
+                    style="width:100%;">INFORMACIÓN</button>
+                  </div>
+                </div>
+
+            </div>
+            <div id="offerimage3"></div>
+
+            <div id="offerbanner4">
+                <h2>Aliviar mis dolores de cabeza</h2>
+            </div>
+            <div id="offerimage4"></div>
+            <div id="offertext4">
+              ¿ Los dolores de cabeza o las migrañas te arruinan la
+              vida? El programa "Aliviar mis dolores de cabeza"
+              es la solución para ti.
+                <br><br>
+                <b id="program-info">El programa comprende:</b>
+                <ul id="program-points">
+                    <li>Una entrevista privada de 30 minutos para conocerte y evaluar tus necesidades</li>
+                    <li>4 clases privadas de 60 minutos por Zoom</li>
+                    <li>4 vídeos grabados de 20-30 minutos con ejercicios para hacer en casa</li>
+                </ul>
+                <br>
+                El objetivo es que al cabo de este mes
+                practicando yoga juntos dispongas de un
+                kit de herramientas que te permita observar
+                la aparición de las crisis y actuar preventivamente.
+                <br><br>
+                <b id="program-info">Las clases incluyen:</b>
+                <ul id="program-points">
+                    <li>Posturas de limpieza energética del cuerpo y de la mente</li>
+                    <li>Ejercicios de respiración</li>
+                    <li>Mudras (gestos de la mano)</li>
+                    <li>Auto-masajes</li>
+                    <li>Meditaciones</li>
+                </ul>
+
+                El intervalo entre dos clases es de al menos una semana para perfeccionar la práctica.
+                <br>
+                Una práctica diaria de 30 minutos es la garantía de éxito.
+                <br><br>
+                Tener experiencia previa en yoga es una ventaja, pero no una necesidad.
+
+                <hr>
+                <p id="price">
+                    <b>Precio del programa: 129 €</b>
+                    <br>
+                    Puedes pagar por Bizum, Paypal o transferencia bancaria.
+                </p>
+
+                <div id="buttons" style="text-align: center; display: flex; white-space: nowrap;">
+                  <div style="width: 50%; float: left; padding: 5px;">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="Aliviar mis dolores de cabeza"
+                    data-text='Quiero reservar el paquete "Aliviar mis dolores de cabeza"'
+                    style="width:100%;">RESERVA</button>
+                  </div>
+                  <div style="width:50%; float: left; padding: 5px;">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="Aliviar mis dolores de cabeza"
+                    data-text="Me gustaría saber más sobre el paquete 'Aliviar mis dolores de cabeza'"
+                    style="width:100%;">INFORMACIÓN</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div id="side2"></div>
+        <footer></footer>
+    </div>
+</body>
+</html>
+
+<script>
+  $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget)
+    var recipient = button.data('whatever')
+    var content = button.data('text')
+    var modal = $(this)
+    // modal.find('.modal-title').text(recipient)
+    modal.find('.modal-title').text(recipient)
+    modal.find('.modal-body textarea').val(content)
+  })
+</script>

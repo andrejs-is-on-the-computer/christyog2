@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/flower.svg" type="image/x-icon" />
+    <title>Yoga Christine</title>
+</head>
+<body>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form name="enquiry-form" method="post" netlify>
+          <div class="modal-body">
+              <div class="form-group">
+                <label for="name" class="col-form-label">Nombre:</label>
+                <input type="text" class="form-control" id="name" name="name">
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-form-label">Correo Electrónico:</label>
+                <input type="text" class="form-control" id="email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="phone" class="col-form-label">Teléfono:</label>
+                <input type="text" class="form-control" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Mensaje:</label>
+                <textarea class="form-control" id="message-text" name="message-text"></textarea>
+              </div>
+
+          </div>
+          <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="contact_button" class="bi bi-question-circle-fill"
+                style="cursor: pointer;"
+                data-toggle="modal" data-target="#exampleModal"
+                data-whatever="Quiero saber más"
+                data-text="Quiero saber más. ">
+    </h1>
+
+    <div class="offer-layout">
+      <nav id="navbar" class="navbar navbar-expand-md navbar-light md-light">
+        <button id="navcollapse" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bi bi-list"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav" style="text-align: center; margin-left: auto; margin-right: auto;">
+            <li class="nav-item colah-nav">
+              <a class="nav-link" href="index-fr.html">
+                <span class="bi bi-house-door-fill"></span>
+                <p id="small-nav-text">ACCUEIL</p>
+              </a>
+            </li>
+            <li class="nav-item colah-nav nav-active">
+              <a class="nav-link active" href="retreat-fr.html">
+                <span class="bi bi-sun"></span>
+                <p id="small-nav-text">ESCAPADE</p>
+              </a>
+            </li>
+            <li class="nav-item colah-nav">
+              <a class="nav-link" href="offers-fr.html">
+                <span class="bi bi-box-seam"></span>
+                <p id="small-nav-text">PROGRAMMES</p>
+              </a>
+            </li>
+            <li class="nav-item colah-nav">
+              <a class="nav-link" href="classes-fr.html">
+                <span class="bi bi-book-half"></span>
+                <p id="small-nav-text">COURS</p>
+              </a>
+            </li>
+            <li class="nav-item colah-nav">
+              <a class="nav-link" href="info-fr.html">
+              <span class="bi bi-info-circle-fill"></span>
+              <p id="small-nav-text">A PROPOS</p>
+            </a>
+            </li>
+            <li class="nav-item colah-nav">
+              <div id="nav-lang" class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  FR
+                </label>
+                <a href="retreat-en.html" class="btn btn-secondary">
+                  EN
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+        <main class="bg-offer">
+            <h1 class="headline">Yoga con Christine</h1>
+        </main>
+
+        <div id="side1"></div>
+
+        <div id="content1">
+          <img id="card-icon" src="./images/flower.svg" alt="">
+          <h1>Calme et volupté en Andalousie</h1>
+          <hr>
+          <p>
+            Faites-vous choyer par Christine et Philippe au cœur de cette
+            merveilleuse terre chargée d'histoire.
+          </p>
+          <p>
+            Un séjour “bien-être et santé” exclusif et personnalisé, qui
+            allie pratique du yoga, massages, activités culturelles et
+            randonnées. Sans oublier les plaisirs gustatifs.
+          </p>
+          <p>
+            Face aux sommets de Sierra Nevada, enneigés de novembre à
+            avril, notre jolie maison vous accueille confortablement.
+            Vous y disposez d'un bel appartement au calme avec terrasse
+            ensoleillée. Vous profitez du jardin fleuri avec sa piscine
+            (de juin à septembre).
+          </p>
+        </div>
+
+        <div class="offer-content">
+            <div id="offerbanner1">
+                <h2>A qui s'adresse ce séjour?</h2>
+            </div>
+            <div id="offertext1">
+              Venez seul(e) ou accompagné(e) par la personne de
+              votre choix. Vous serez les uniques invité(e)s,
+              dorloté(e)s en toute exclusivité !
+                <br><br>
+
+                <b id="program-info">Ce séjour est pour vous si:</b>
+                <ul id="program-points">
+                  <li>Vous voulez vous ressourcer au calme, recharger vos batteries tout en découvrant la région</li>
+                  <li>Vous rêvez de vous faire dorloter et de ne vous préoccuper de rien durant vos vacances</li>
+                  <li>Vous n'avez jamais fait de yoga ou reçu de massages et vous souhaitez découvrir ces techniques de manière individualisée</li>
+                  <li>Vous aspirez à perfectionner votre pratique du yoga ou approfondir les techniques respiratoires</li>
+                  <li>Vous n'aimez pas partir seul(e)(s) en vacances. Chez nous, vous trouverez un accueil attentionné</li>
+                  <li>Vous désirez nourrir votre corps (nourriture saine, activités à l'air libre, massages énergétiques), votre esprit (visites culturelles et échanges) et votre cœur (belles rencontres amicales)</li>
+
+                </ul>
+                Nous nous réjouissons déjà de votre visite.
+                <br>
+                <hr>
+
+                <b>Qui sommes-nous ?</b>
+                <br>
+                <br>
+                <p>
+                  Nous sommes un couple belgo-allemand établi à Grenade
+                  depuis 2015, tombé sous le charme de cette ville chargée
+                  d'histoire, de cette région aux multiples paysages, de sa
+                  population aimable et accueillante.
+                </p>
+                <p>
+                  Christine pratique et enseigne le Hatha Yoga.
+                  Particulièrement passionnée par les techniques
+                  de respiration, elle vous propose de partager
+                  sa passion et ses connaissances. Ainsi vous
+                  profiterez au cours de votre séjour d'un cours
+                  de yoga et méditation journalier d'une heure et
+                  de trois massages énergétiques personnalisés.
+                </p>
+                <p>
+                  Philippe, curieux insatiable et fin palais,
+                  s'occupe de vous restaurer sainement grâce
+                  à une cuisine végétarienne, et de vous faire
+                   partager l'histoire, la nature, la culture de
+                   Grenade et de sa région.
+                </p>
+                <p>
+                  Notre maison la Granadina associe tradition
+                  et modernité et reflète notre goût pour les
+                  voyages. Aussi aimons-nous recevoir et partager,
+                  échanger avec nos hôtes.
+                </p>
+                <ul id="program-points">
+                  <li>Nous aimons randonner, partir à la découverte de l'Andalousie, de l'Espagne.</li>
+                  <li>Nous aimons l'art, la littérature, le yoga, les voyages.</li>
+                  <li>Nous sommes les heureux maîtres d'un jeune chien calme et affectueux, prénommé Cachi.</li>
+                  <li>Nous pouvons communiquer en français, anglais, allemand ou espagnol.</li>
+                </ul>
+
+                <hr>
+                <b>Lieu du séjour - Authenticité et quiétude</b>
+                <br><br>
+                <p>
+                  Avec la Granadina, nous avons trouvé la maison de nos rêves.
+                  Nichée au pied de la Sierra Nevada dans un petit village
+                  typique d'Andalousie entouré d'oliviers. C'est le lieu idéal
+                  pour se ressourcer au calme, à 4km seulement du centre de
+                  Grenade et de ses trésors historiques.
+                </p>
+
+                <p>
+                  Vous êtes hébergé(e)(s) dans un petit appartement décoré avec
+                  goût, situé au premier étage de notre maison. Avec son entrée
+                  séparée, il se compose d'un séjour avec coin cuisine, d'une
+                  salle de bains et d'une chambre confortable donnant sur le
+                  calme du jardin. Vous disposez aussi d'une terrasse privative
+                  avec une vue imprenable sur la Sierra Nevada dont vous pouvez
+                  profiter en toute intimité.
+                </p>
+
+                <p>
+                  Le jardin de type andalou est à vos pieds, fleuri et ombragé
+                  de mars à octobre.
+                </p>
+
+                <p>
+                  Vous êtes accueilli(e)(s) chez nous comme chez des amis.
+                </p>
+            </div>
+            <div id="offerimage1"></div>
+
+            <div id="offerbanner2">
+                <h2>Yoga – Méditation – Massages</h2>
+            </div>
+            <div id="offerimage2"></div>
+            <div id="offertext2">
+              <p>
+                Que vous soyez novices ou pratiquant(e)s chevronné(e)s, Christine
+                adapte les cours de yoga à vos nécessités.
+              </p>
+
+              <p>
+                Les cours sont basés sur la discipline du Hatha Yoga teintée de
+                yoga restauratif (yoga doux pour relâcher les tensions), de Yin
+                Yoga (yoga travaillant les étirements musculaires profonds) ou
+                de Kundalini Yoga (yoga énergétique). Chaque cours comprend un
+                moment d'intériorisation, un échauffement, des postures, des
+                techniques de respiration et une intégration. Le cours est suivi
+                d'une technique menant à un état méditatif.
+              </p>
+
+              <p>
+                Les massages combinent le massage traditionnel avec de
+                l'acupression pour stimuler les flux énergétiques du corps et
+                des ajustements crâniens. Ils se basent sur une profonde
+                connexion entre la personne recevant le massage et le guérisseur.
+                Le travail consiste à ouvrir les canaux énergétiques du corps
+                pour atteindre un équilibre émotionnel. Le programme des
+                massages est basé sur un entretien individuel avant le début
+                du séjour.
+              </p>
+              <hr>
+              Nature et Culture
+
+              Choisissez parmi ces activités et suivez Philippe, votre guide.
+
+
+              <ul id="program-points">
+                <li>L'Alhambra et ses nombreux palais d'une incroyable beauté, chef
+                d’œuvre de l'art hispano-mauresque</li>
+
+                <li>La Grenade arabe avec son quartier Albaycin, ancienne médina
+                arabe, au dédale de ruelles et au charme enchanteur</li>
+
+                <li>Rencontre des rois catholiques dans l'écrin de leur dernière
+                demeure, la Chapelle Royale, et visite de la Cathédrale</li>
+
+                <li>Suivons les pas de Federico García Lorca, poète mondialement
+                reconnu, de sa maison natale au lieu de son martyre</li>
+
+                <li>Randonnée dans un parc naturel offrant de superbes vues sur
+                les sommets enneigés de la Sierra Nevada</li>
+
+                <li>Promenade le long d'un des très rares aqueducs naturels au
+                monde dans un paysage creusé par les canyons et habité depuis
+                le néolithique (dolmens) (Gorafe, à 70 km de Grenade)</li>
+
+                <li>Excursion dans une des nombreuses criques de la Costa tropical.
+                Journée détente au bord de la plage (à 75 km de Grenade)</li>
+
+                <li>Vibrer aux sons d'un spectacle de flamenco. Quand la magie opère,
+                le duende (ce charme mystérieux) pénètre les profondeurs de l'âme</li>
+
+                <li>Vivre l'expérience d'un bain arabe traditionnel</li>
+
+              </ul>
+
+              <p>
+                Nous profitons de ces visites pour vous faire partager nos
+                connaissances, faire découvrir des lieux singuliers en dehors
+                des chemins battus et partager nos coups de cœur.
+              </p>
+
+              <p>
+                Évidemment  nous ne manquons pas à la tradition locale, les
+                tapas (amuse-gueules) partagés debout au comptoir ou au soleil sur
+                une terrasse.
+              </p>
+
+              <hr>
+
+              <b>
+                Alimentation délicieuse, saine et équilibrée
+              </b>
+
+              <p>
+                Philippe se fait un plaisir de vous proposer et de vous préparer
+                une cuisine saine et végétarienne à base de produits biologiques
+                et locaux selon disponibilité. Les repas sont équilibrés pour
+                vous régénérer au mieux durant votre séjour.
+                Philippe peut adapter les repas à vos intolérances alimentaires
+                éventuelles. N´hésitez pas à le préciser.
+              </p>
+
+              <p>
+                Vous avez le choix de partager les repas avec nous ou de les
+                prendre en toute intimité dans votre appartement, ou encore
+                par beau temps sur votre terrasse.
+              </p>
+
+            </div>
+
+            <div id="offerbanner3">
+                <h2>Déroulement d'une journée type</h2>
+            </div>
+            <div id="offertext3">
+              Vous recevez votre programme complet le jour de votre arrivée,
+              prenant en compte les prévisions météorologiques. Ce programme
+              peut évoluer pendant votre séjour en fonction de vos envies ou
+              désirs. Ce sont vos vacances et nous nous adaptons à vous.
+              <br><br>
+
+              <ul id="program-points">
+                <li>08:15-09:30 Yoga et méditation</li>
+                <li>09:30 Petit déjeuner</li>
+                <li>10:30-11:30 Massage (1ère personne)</li>
+                <li>11:30-12:30 Massage (2e personne)</li>
+                <li>12:30-14:00 Temps libre – à lire, à bronzer au soleil, à flâner dans le village et ses alentours</li>
+                <li>14:00 Déjeuner</li>
+                <li>16:00 Excursion</li>
+                <li>20:00 Collation du soir</li>
+              </ul>
+
+              <hr>
+
+              <b>
+                Comment arriver chez nous ?
+              </b>
+              <br><br>
+
+              <p>
+                Les aéroports de Malaga et Grenade sont les plus proches. Nous vous accueillons et assurons vos transferts de et vers ces aéroports.
+              </p>
+
+              <p>
+                L'aéroport de Malaga est à 100 minutes en voiture et celui de Grenade à 25 minutes.
+              </p>
+
+
+
+
+            </div>
+            <div id="offerimage3"></div>
+
+            <div id="offerbanner4">
+                <h2>Un prix tout inclus</h2>
+            </div>
+            <div id="offerimage4"></div>
+            <div id="offertext4">
+              <p>
+                Dès votre arrivée à l'aéroport, vous êtes déjà en vacances. Nous vous prenons intégralement en charge.
+              </p>
+              <b id="program-info">
+                Nous vous proposons un séjour de 6 jours, 5 nuits, tout compris
+              </b>
+
+              <ul id="program-points">
+                <li>5 nuitées en appartement</li>
+                <li>Pension complète (3 repas par jour), boissons incluses (eau, thé, café)</li>
+                <li>Un cours privé de yoga par jour (5 cours)</li>
+                <li>Un massage, un jour sur deux (3 massages/personne)</li>
+                <li>Une activité extérieure à votre choix par jour, déplacement compris (4 au total)</li>
+                <li>Les entrées aux monuments visités</li>
+                <li>Transferts de et vers l'aéroport</li>
+              </ul>
+              <b id="program-info">
+                Le prix pour un séjour de 5 nuits est de
+              </b>
+              <ul id="program-points">
+                <li>1500 € en séjour individuel</li>
+                <li>1250 € par personne pour un séjour à deux</li>
+              </ul>
+
+              Le prix des vols n'est pas inclus dans ce tarif. Ils sont à réserver par vos soins.
+              Consultez-nous pour d'autres durées.
+              <hr>
+              <b>Je veux réserver</b>
+              <p>
+                Écrivez-nous et nous nous ferons un plaisir de vous concocter un programme ajusté et sur mesure.
+              </p>
+              <p>
+                Nous pouvons organiser une session via Skype ou Zoom pour apprendre à mieux se connaître et cibler au mieux vos attentes.
+              </p>
+              <p>
+                Un acompte de 500 € est demandé lors de la réservation. Le solde est à payer 3 semaines avant votre date d'arrivée.
+              </p>
+            </div>
+        </div>
+        <div id="side2"></div>
+        <footer></footer>
+    </div>
+</body>
+</html>
+
+<script>
+  $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget)
+    var recipient = button.data('whatever')
+    var content = button.data('text')
+    var modal = $(this)
+    // modal.find('.modal-title').text(recipient)
+    modal.find('.modal-title').text(recipient)
+    modal.find('.modal-body textarea').val(content)
+  })
+</script>

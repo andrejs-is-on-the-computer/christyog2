@@ -211,13 +211,68 @@ h2 {
     "side5 break3 side6"
     "side5 nature side6"
     "side5 delicious side6"
-    /* "side3 recontent1 side4"
-
-    "resplash2 resplash2 resplash2"
-    "side5 recontent2 side6"
-    "side5 break3 side6"*/
+    "image-break-2 image-break-2 image-break-2"
+    "side7 schedule side8"
+    "side7 booking-details side8"
     "footer footer footer"
     ;
+}
+
+#booking-details {
+  grid-area: booking-details;
+}
+
+#schedule {
+  grid-area: schedule;
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "price-header price-header schedule-head schedule-head"
+  "price price schedule-times schedule-details"
+  "schedule-text schedule-text schedule-text schedule-text"
+}
+
+#schedule-head {
+  grid-area: schedule-head;
+}
+
+#schedule-text {
+  grid-area: schedule-text;
+  text-align: center;
+}
+
+#schedule-times {
+  grid-area: schedule-times;
+  text-align: right;
+}
+
+#schedule-details {
+  grid-area: schedule-details;
+}
+
+#price-header {
+  grid-area: price-header;
+}
+
+#price {
+  grid-area: price;
+}
+
+#schedule-points {
+  list-style-type: none;
+  padding: 5px;
+}
+
+#schedule-image {
+  grid-area: schedule-image;
+  background-image: url(yoga_group-min-ed.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 20px;
+  margin-right: 10px;
 }
 
 #nature {
@@ -239,16 +294,6 @@ h2 {
 #nature-text {
   grid-area: nature-text;
   margin-left: 50px;
-}
-
-#nature-image {
-  grid-area: nature-image;
-  background-image: url(doorway.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  border-radius: 20px;
-  margin-right: 10px;
 }
 
 #delicious {
@@ -273,6 +318,16 @@ h2 {
 #delicious-image {
   grid-area: delicious-image;
   background-image: url(veggies.jpg);
+}
+
+#nature-image {
+  grid-area: nature-image;
+  background-image: url(chris-phillipe-small.jpg);
+}
+
+
+
+#delicious-image, #nature-image, #recontent2-card-3, #recontent2-card-2, #recontent2-card-1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -289,9 +344,9 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     /* grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 1.2fr 0.8fr; */
     grid-template-areas:
-    "re-content2-text-1 re-content2-text-1 recontent2-card-1"
-    "recontent2-card-2 re-content2-text-2 re-content2-text-2"
-    "re-content2-text-3 re-content2-text-3 recontent2-card-3"
+    "re-content2-text-1 re-content2-text-1 re-content2-text-1"
+    "re-content2-text-2 re-content2-text-2 re-content2-text-2"
+    "re-content2-text-3 re-content2-text-3 re-content2-text-3"
     /* "re-content2-card-4 re-content2-text-4 recontent2-text-4" */
     ;
 }
@@ -341,10 +396,10 @@ h2 {
   grid-area: recontent2-card-4;
 }
 
-#re-content2-text-1, #re-content2-text-2, #re-content2-text-3, #re-content2-text-4
+/* #re-content2-text-1, #re-content2-text-2, #re-content2-text-3, #re-content2-text-4
 {
 
-}
+} */
 
 #re-content2-text-1 {
   grid-area: re-content2-text-1;
@@ -1035,9 +1090,17 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 }
 
 #image-break {
-    height: 70vh;
     grid-area: image-break;
     background-image: url("interior.jpg");
+}
+
+#image-break-2 {
+    grid-area: image-break-2;
+    background-image: url("yoga_group-min-ed.jpg");
+}
+
+#image-break, #image-break-2 {
+    height: 70vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -1107,7 +1170,7 @@ main {
 }
 
 .bg-retreat {
-  background-image: url('cottage.jpg');
+  background-image: url('pueblo-small.jpg');
 }
 
 .headline {
@@ -1147,7 +1210,7 @@ main {
     margin-bottom: 80px;
 }
 
-#intro-content2, #intro-content3, #nature1, #delicious-head {
+#intro-content2, #intro-content3, #nature1, #delicious-head, #schedule-head, #center-header{
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -1186,27 +1249,27 @@ main {
 
 #splash1 {
   grid-area: splash1;
-  background-image: url(splash1.jpg);
+  background-image: url(yoga-small.jpg);
 }
 #splash2 {
   grid-area: splash2;
-  background-image: url(splash2.jpg);
+  background-image: url(backyard-small.jpg);
 }
 #splash3 {
   grid-area: splash3;
-  background-image: url(splash3.jpg);
+  background-image: url(IMG_1174.jpg);
 }
 #splash4 {
   grid-area: splash4;
-  background-image: url(splash4.jpg);
+  background-image: url(IMG_1192.jpg);
 }
 #splash5 {
   grid-area: splash5;
-  background-image: url(splash5.jpg);
+  background-image: url(food-small.jpg);
 }
 #splash6 {
   grid-area: splash6;
-  background-image: url(splash6.jpg);
+  background-image: url(terrace-small.jpg);
 }
 
 #intro-cards{

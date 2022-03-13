@@ -209,13 +209,44 @@ h2 {
     "image-break image-break image-break"
     "side5 re-content-2 side6"
     "side5 break3 side6"
-    "side5 nature side6"
-    "side5 delicious side6"
-    "image-break-2 image-break-2 image-break-2"
-    "side7 schedule side8"
-    "side7 booking-details side8"
+    "retreat-info-2 retreat-info-2 retreat-info-2"
+    /* "side5 nature side6"
+    "side5 delicious side6" */
+    /* "image-break-2 image-break-2 image-break-2" */
+    /* "side7 schedule side8"
+    "side7 booking-details side8" */
+    "retreat-info retreat-info retreat-info"
     "footer footer footer"
     ;
+}
+
+.retreat-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: retreat-info;
+    grid-template-areas:
+    "retreatbanner1 retreatbanner1 retreatbanner1"
+    "retreattext1 retreattext1 retreatimage1"
+    /* "offerbanner2 offerbanner2 offerbanner2"
+    "offerimage2 offertext2 offertext2"
+    "offerbanner3 offerbanner3 offerbanner3"
+    "offertext3 offertext3 offerimage3"
+    "offerbanner4 offerbanner4 offerbanner4"
+    "offerimage4 offertext4 offertext4" */
+    ;
+}
+
+.retreat-info-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-area: retreat-info-2;
+  grid-template-areas:
+  "retreatbanner2 retreatbanner2 retreatbanner2"
+  "retreatimage2 retreattext2 retreattext2"
+  /* grid-template-areas:
+  "retreatbanner1 retreatbanner1 retreatbanner1"
+  "retreattext1 retreattext1 retreatimage1"
+  ; */
 }
 
 #booking-details {
@@ -227,11 +258,13 @@ h2 {
   display: grid;
   padding: 0;
   margin: 0;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "price-header price-header schedule-head schedule-head"
-  "price price schedule-times schedule-details"
-  "schedule-text schedule-text schedule-text schedule-text"
+  "price-header price-header"
+  "price price"
+  "schedule-head schedule-head"
+  "schedule-times schedule-details"
+  "schedule-text schedule-text"
 }
 
 #schedule-head {
@@ -283,7 +316,7 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
   "nature1 nature1 nature1"
-  "nature-image nature-text nature-text"
+  "nature-text nature-text nature-text"
 }
 
 #nature1{
@@ -322,6 +355,8 @@ h2 {
 
 #nature-image {
   grid-area: nature-image;
+  margin-top: 150px;
+  margin-right: 100px;
   background-image: url(chris-phillipe-small.jpg);
 }
 
@@ -345,11 +380,22 @@ h2 {
     /* grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 1.2fr 0.8fr; */
     grid-template-areas:
     "re-content2-text-1 re-content2-text-1 re-content2-text-1"
-    "re-content2-text-2 re-content2-text-2 re-content2-text-2"
+    "nature-image re-content2-text-2 re-content2-text-2"
     "re-content2-text-3 re-content2-text-3 re-content2-text-3"
     /* "re-content2-card-4 re-content2-text-4 recontent2-text-4" */
     ;
 }
+
+/* #nature {
+  grid-area: nature;
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "nature1 nature1 nature1"
+  "nature-image nature-text nature-text"
+} */
 
 #re-content2-container-2 {
   grid-area: re-content-2;
@@ -743,8 +789,6 @@ h2 {
     ;
 }
 
-
-
 .colah-nav {
     color: #ffffff !important;
     /* text-shadow: 0.5px 0.5px 3px #1f1f1f; */
@@ -919,7 +963,7 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
         ;
     }
 
-    #offerimage1, #offerimage2, #offerimage3, #offerimage4 {
+    #offerimage1, #offerimage2, #offerimage3, #offerimage4, #retreatimage1 {
         height: 50vh;
         /* height: 100%; */
         }
@@ -996,16 +1040,20 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
     margin-right: auto;
 }
 
-#offertext1, #offertext2, #offertext3, #offertext4 {
+#offertext1, #offertext2, #offertext3, #offertext4,
+#retreattext1, #retreattext2
+{
     padding: 40px;
 }
 
-#offertext1, #offertext3 {
+#offertext1, #offertext3, #retreattext1 {
     background-color: #D9CBEA;
     color: #212529;
 }
 
-#offerbanner1, #offerbanner2, #offerbanner3, #offerbanner4 {
+#offerbanner1, #offerbanner2, #offerbanner3, #offerbanner4,
+#retreatbanner1, #retreatbanner2
+{
     background-color: #AC66AC;
     color: white;
     text-align: center;
@@ -1013,6 +1061,24 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 
 #offerbanner1{grid-area: offerbanner1;} #offerbanner2{grid-area: offerbanner2;}
 #offerbanner3{grid-area: offerbanner3;} #offerbanner4{grid-area: offerbanner4;}
+#retreatbanner1{grid-area: retreatbanner1;}
+#retreatbanner2{grid-area: retreatbanner2;}
+
+#retreatimage1 {
+  grid-area: retreatimage1;
+  background-image: url(IMG_1115-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+#retreatimage2 {
+  grid-area: retreatimage2;
+  background-image: url(IMG_1115-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
 
 #offerimage1 {
     grid-area: offerimage1;
@@ -1043,18 +1109,9 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
     background-position: center;
 }
 
-#offertext1 {
-    grid-area: offertext1;
-}
-#offertext2 {
-    grid-area: offertext2;
-}
-#offertext3 {
-    grid-area: offertext3;
-}
-#offertext4 {
-    grid-area: offertext4;
-}
+#offertext1 {grid-area: offertext1;}#offertext2 {grid-area: offertext2;}
+#offertext3 {grid-area: offertext3;}#offertext4 {grid-area: offertext4;}
+#retreattext1 {grid-area: retreattext1;} #retreattext2 {grid-area: retreattext2;}
 
 #carousel_info {
     width:100%;
@@ -1091,7 +1148,7 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 
 #image-break {
     grid-area: image-break;
-    background-image: url("interior.jpg");
+    background-image: url("elfargue.jpg");
 }
 
 #image-break-2 {
@@ -1170,7 +1227,7 @@ main {
 }
 
 .bg-retreat {
-  background-image: url('pueblo-small.jpg');
+  background-image: url('alhambra.jpg');
 }
 
 .headline {

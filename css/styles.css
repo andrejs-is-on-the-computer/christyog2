@@ -249,6 +249,16 @@ h2 {
   ; */
 }
 
+#resplash{
+  grid-area: resplash;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "splash1 splash2 splash3"
+  "splash4 splash5 splash6"
+  ;
+}
+
 #booking-details {
   grid-area: booking-details;
 }
@@ -1008,6 +1018,71 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
             "class-info"
             ;
     }
+
+    .retreat-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "content1"
+        "break1"
+        "resplash"
+        "content2"
+        "break2"
+        "image-break"
+        "re-content-2"
+        "break3"
+        "retreat-info-2"
+        "retreat-info"
+        "footer"
+        ;
+    }
+
+    #resplash{
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "splash1"
+      "splash2"
+      "splash3"
+      "splash4"
+      "splash5"
+      "splash6"
+      ;
+    }
+
+    #re-content2-container-1 {
+        display: grid;
+        /* height: 100vh; */
+        padding: 0;
+        margin: 0;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 1.2fr 0.8fr; */
+        grid-template-areas:
+        "re-content2-text-1"
+        "re-content2-text-2"
+        "nature-image"
+        "re-content2-text-3"
+        /* "re-content2-card-4 re-content2-text-4 recontent2-text-4" */
+        ;
+    }
+
+    .retreat-info {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "retreatbanner1"
+        "retreatimage1"
+        "retreattext1"
+        ;
+    }
+
+    .retreat-info-2 {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "retreatbanner2"
+      "retreatimage2"
+      "retreattext2"
+      ;
+    }
 }
 
 #program-info {
@@ -1074,10 +1149,10 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 
 #retreatimage2 {
   grid-area: retreatimage2;
-  background-image: url(IMG_1115-min.jpg);
+  background-image: url(pointing.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;
+  background-position: right;
 }
 
 #offerimage1 {
@@ -1287,15 +1362,7 @@ main {
   grid-area: intro-content3;
 }
 
-#resplash{
-  grid-area: resplash;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-  "splash1 splash2 splash3"
-  "splash4 splash5 splash6"
-  ;
-}
+
 
 #splash1,#splash2,#splash3,#splash4,#splash5,#splash6 {
   background-repeat: no-repeat;

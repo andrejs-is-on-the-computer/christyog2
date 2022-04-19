@@ -842,6 +842,10 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
     height: 60px;
 }
 
+#program-points {
+    margin-left: 50px;
+}
+
 .card-columns {
     @include media-breakpoint-only(lg) {
       column-count: 4;
@@ -852,6 +856,10 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
   }
 
 @media only screen and (max-width: 900px){
+
+  #program-points {
+      margin-left: 0px;
+  }
 
     #navcollapse {
         margin: 10px auto;
@@ -1083,14 +1091,18 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
       "retreattext2"
       ;
     }
+
+    #delicious {
+      grid-template-columns:1fr;
+      grid-template-areas:
+      "delicious-head"
+      "delicious-text"
+      "delicious-image"
+    }
 }
 
 #program-info {
     margin-left: 30px;
-}
-
-#program-points {
-    margin-left: 50px;
 }
 
 .program-points {

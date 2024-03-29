@@ -17,7 +17,7 @@ hr {
 }
 
 #hr-break {
-    margin-top: 85px;
+    margin-top: 51px;
 }
 
 h1 {
@@ -100,7 +100,7 @@ h2 {
 #content2{
     background: #ffffff;
     grid-area: content2;
-    padding: 50px 25px;
+    padding: 50px 20px;
     /* display: grid;
     gap: 50px;
     grid-template-columns: 1fr 1fr 1fr; */
@@ -241,7 +241,7 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-area: retreat-info-2;
   grid-template-areas:
-  "retreatbanner2 retreatbanner2 retreatbanner2"
+  /* "retreatbanner2 retreatbanner2 retreatbanner2" */
   "retreatimage2 retreattext2 retreattext2"
   /* grid-template-areas:
   "retreatbanner1 retreatbanner1 retreatbanner1"
@@ -364,22 +364,30 @@ h2 {
 }
 
 #nature-image {
+
   grid-area: nature-image;
   margin-top: auto;
   margin-bottom: auto;
-  margin-right: 150px;
+  margin-left: 15px;
+  margin-right: 15px;
   background-image: url(chris-phillipe-small.jpg);
+  height: 35vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 
 
 #delicious-image, #nature-image, #recontent2-card-3, #recontent2-card-2, #recontent2-card-1 {
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  height: 30vh;
+  height: 30vh; */
   border-radius: 20px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 #re-content2-container-1 {
@@ -438,11 +446,12 @@ h2 {
 }
 #re-content2-text-2 {
   grid-area: re-content2-text-2;
-  margin-top: 100px;
+  margin-top: 40px;
+  padding-left: 15px;
 }
 #re-content2-text-3 {
   grid-area: re-content2-text-3;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 #re-content2-text-4 {
   grid-area: re-content2-text-4;
@@ -1618,7 +1627,7 @@ section {
 #card-icon{
     height: 70px;
     width: auto;
-    margin: 50px;
+    margin: 20px;
     margin-left: auto;
     margin-right: auto;
 }

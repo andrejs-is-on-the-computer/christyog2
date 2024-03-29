@@ -143,7 +143,7 @@ h2 {
     'side3 intro-text-2 side4'
     'intro-head-3 intro-head-3 intro-head-3'
     'info-3-cont info-3-cont info-3-cont'
-    "footer footer footer"
+    'footer footer footer'
     ;
 }
 
@@ -370,7 +370,7 @@ h2 {
   margin-bottom: auto;
   margin-left: 15px;
   margin-right: 15px;
-  background-image: url(chris-phillipe-small.jpg);
+  background-image: url(chris-phillipe-small-min.jpg);
   height: 35vh;
   background-repeat: no-repeat;
   background-size: cover;

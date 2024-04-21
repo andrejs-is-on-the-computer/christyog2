@@ -226,7 +226,7 @@ h2 {
     grid-area: retreat-info;
     grid-template-areas:
     "retreatbanner1 retreatbanner1 retreatbanner1"
-    "retreattext1 retreattext1 retreatimage1"
+    "retreattext1 retreattext1 retreattext1"
     /* "offerbanner2 offerbanner2 offerbanner2"
     "offerimage2 offertext2 offertext2"
     "offerbanner3 offerbanner3 offerbanner3"
@@ -242,7 +242,8 @@ h2 {
   grid-area: retreat-info-2;
   grid-template-areas:
   /* "retreatbanner2 retreatbanner2 retreatbanner2" */
-  "retreatimage2 retreattext2 retreattext2"
+  /* "retreatimage2 retreattext2 retreattext2" */
+  "retreattext2 retreattext2 retreattext2"
   /* grid-template-areas:
   "retreatbanner1 retreatbanner1 retreatbanner1"
   "retreattext1 retreattext1 retreatimage1"
@@ -326,7 +327,8 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
   "nature1 nature1 nature1"
-  "nature-text nature-text nature-text"
+  /* "nature-text nature-text nature-text" */
+  "retreatimage2 nature-text nature-text"
 }
 
 #nature1{
@@ -344,10 +346,12 @@ h2 {
   display: grid;
   padding: 0;
   margin: 0;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 0.5fr 1fr;
   grid-template-areas:
   "delicious-head delicious-head delicious-head"
   "delicious-text delicious-text delicious-image"
+  /* "delicious-image delicious-image delicious-image"
+  "delicious-text delicious-text delicious-text" */
 }
 
 #delicious-head {
@@ -355,12 +359,19 @@ h2 {
 }
 
 #delicious-text {
+  margin-top: auto;
+  margin-bottom: auto;
   grid-area: delicious-text;
 }
 
 #delicious-image {
   grid-area: delicious-image;
   background-image: url(veggies.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 30vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #nature-image {
@@ -1112,13 +1123,14 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
     margin-right: auto;
 }
 
-#offertext1, #offertext2, #offertext3, #offertext4,
-#retreattext1, #retreattext2
+#offertext1, #offertext2, #offertext3, #offertext4
 {
     padding: 40px;
 }
 
-#offertext1, #offertext3, #retreattext1 {
+
+
+#offertext1, #offertext3{
     background-color: #D9CBEA;
     color: #212529;
 }
@@ -1146,10 +1158,12 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 
 #retreatimage2 {
   grid-area: retreatimage2;
-  background-image: url(phil-pointing.jpg);
+  background-image: url(phil-pointing.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #offerimage1 {

@@ -397,14 +397,14 @@ h3 {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 15px;
-  margin-right: 15px;
+  margin-right: 35px;
   background-image: url(chris-phillipe-small-min.jpg);
-  height: 35vh;
+  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -423,7 +423,7 @@ h3 {
     /* height: 100vh; */
     padding: 0;
     margin: 0;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
     /* grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 1.2fr 0.8fr; */
     grid-template-areas:
     "re-content2-text-1 re-content2-text-1 re-content2-text-1"
@@ -1100,7 +1100,7 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 
     #re-content2-container-1 {
         display: grid;
-        padding: 40px;
+        padding: 20px;
         grid-template-columns: 1fr;
         grid-template-areas:
         "re-content2-text-1"
@@ -1108,6 +1108,11 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
         "nature-image"
         "re-content2-text-3"
         ;
+    }
+
+    #nature-image {
+      margin: 0 15px;
+      height: 40vh;
     }
 
     .retreat-info {

@@ -28,6 +28,10 @@ h2 {
     font-size: 40px;
     font-weight: lighter;
 }
+h3 {
+    font-size: 35px;
+    font-weight: lighter;
+}
 
 #small-card-icon {
     height: 50px;
@@ -207,8 +211,8 @@ h2 {
     "side3 content2 side4"
     "side3 break2 side4"
     "image-break image-break image-break"
-    "side5 re-content-2 side6"
     "side5 break3 side6"
+    "side5 re-content-2 side6"
     "side7 retreat-info-2 side8"
     /* "side5 nature side6"
     "side5 delicious side6" */
@@ -227,6 +231,7 @@ h2 {
     grid-template-areas:
     "retreatbanner1 retreatbanner1 retreatbanner1"
     "retreattext1 retreattext1 retreattext1"
+    "buttons buttons buttons"
     /* "offerbanner2 offerbanner2 offerbanner2"
     "offerimage2 offertext2 offertext2"
     "offerbanner3 offerbanner3 offerbanner3"
@@ -241,7 +246,7 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-area: retreat-info-2;
   grid-template-areas:
-  /* "retreatbanner2 retreatbanner2 retreatbanner2" */
+  "retreatbanner2 retreatbanner2 retreatbanner2"
   /* "retreatimage2 retreattext2 retreattext2" */
   "retreattext2 retreattext2 retreattext2"
   /* grid-template-areas:
@@ -327,8 +332,19 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
   "nature1 nature1 nature1"
-  /* "nature-text nature-text nature-text" */
   "retreatimage2 nature-text nature-text"
+}
+
+#retreatimage2 {
+  grid-area: retreatimage2;
+  background-image: url(phil-pointing.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #nature1{
@@ -338,7 +354,7 @@ h2 {
 
 #nature-text {
   grid-area: nature-text;
-  margin-left: 50px;
+  padding-left: 15px;
 }
 
 #delicious {
@@ -371,6 +387,7 @@ h2 {
   background-size: cover;
   background-position: right;
   height: 30vh;
+  margin-left: 7px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -458,7 +475,6 @@ h2 {
 #re-content2-text-2 {
   grid-area: re-content2-text-2;
   margin-top: 40px;
-  padding-left: 15px;
 }
 #re-content2-text-3 {
   grid-area: re-content2-text-3;
@@ -795,6 +811,10 @@ h2 {
     ;
 }
 
+#buttons {
+  grid-area: buttons;
+}
+
 .colah-nav {
     color: #ffffff !important;
     /* text-shadow: 0.5px 0.5px 3px #1f1f1f; */
@@ -842,6 +862,11 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
     margin-left: 50px;
 }
 
+
+#retreattext1 {
+  padding: 0px;
+}
+
 .card-columns {
     @include media-breakpoint-only(lg) {
       column-count: 4;
@@ -854,7 +879,7 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 @media only screen and (max-width: 900px){
 
   #program-points {
-      margin-left: 0px;
+      margin-left: 20px;
   }
 
     #navcollapse {
@@ -1042,6 +1067,25 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
         ;
     }
 
+    #nature {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "nature1"
+      "nature-text"
+      "retreatimage2"
+      ;
+    }
+
+    #retreatimage2 {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      height: 30vh;
+    }
+
     #resplash{
       grid-template-columns: 1fr;
       grid-template-areas:
@@ -1056,17 +1100,13 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 
     #re-content2-container-1 {
         display: grid;
-        /* height: 100vh; */
-        padding: 0;
-        margin: 0;
+        padding: 40px;
         grid-template-columns: 1fr;
-        /* grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 1.2fr 0.8fr; */
         grid-template-areas:
         "re-content2-text-1"
         "re-content2-text-2"
         "nature-image"
         "re-content2-text-3"
-        /* "re-content2-card-4 re-content2-text-4 recontent2-text-4" */
         ;
     }
 
@@ -1076,14 +1116,15 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
         "retreatbanner1"
         "retreatimage1"
         "retreattext1"
+        "buttons"
         ;
     }
 
     .retreat-info-2 {
+      padding: 40px;
       grid-template-columns: 1fr;
       grid-template-areas:
       "retreatbanner2"
-      "retreatimage2"
       "retreattext2"
       ;
     }
@@ -1094,6 +1135,15 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
       "delicious-head"
       "delicious-text"
       "delicious-image"
+    }
+
+    #delicious-image {
+      margin: 0;
+    }
+
+    #retreattext1 {
+      padding-left: 40px;
+      padding-right: 40px;
     }
 }
 
@@ -1125,7 +1175,8 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 
 #offertext1, #offertext2, #offertext3, #offertext4
 {
-    padding: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -1135,8 +1186,7 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
     color: #212529;
 }
 
-#offerbanner1, #offerbanner2, #offerbanner3, #offerbanner4,
-#retreatbanner1, #retreatbanner2
+#offerbanner1, #offerbanner2, #offerbanner3, #offerbanner4
 {
     background-color: #AC66AC;
     color: white;
@@ -1145,7 +1195,6 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
 
 #offerbanner1{grid-area: offerbanner1;} #offerbanner2{grid-area: offerbanner2;}
 #offerbanner3{grid-area: offerbanner3;} #offerbanner4{grid-area: offerbanner4;}
-#retreatbanner1{grid-area: retreatbanner1;}
 #retreatbanner2{grid-area: retreatbanner2;}
 
 #retreatimage1 {
@@ -1154,16 +1203,6 @@ a, .navbar-brand, .nav-item, .nav-link, .navbar-toggler, .navbar-toggler-icon {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-}
-
-#retreatimage2 {
-  grid-area: retreatimage2;
-  background-image: url(phil-pointing.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #offerimage1 {
@@ -1353,7 +1392,8 @@ main {
     margin-bottom: 80px;
 }
 
-#intro-content2, #intro-content3, #nature1, #delicious-head, #schedule-head, #center-header{
+#intro-content2, #intro-content3, #nature1, #delicious-head, #schedule-head,
+#center-header, #retreatbanner2{
     justify-content: center;
     align-items: center;
     text-align: center;
